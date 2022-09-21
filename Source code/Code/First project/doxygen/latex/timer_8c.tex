@@ -1,0 +1,112 @@
+\hypertarget{timer_8c}{}\doxysection{MCAL/\+Timer/timer.c File Reference}
+\label{timer_8c}\index{MCAL/Timer/timer.c@{MCAL/Timer/timer.c}}
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Interrupts.\+h\char`\"{}}\newline
+Include dependency graph for timer.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{timer_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{timer_8c_a34f4f2532ae60c90c1574c22b0609606}{timer0\+\_\+\+Init}} (\mbox{\hyperlink{timer_8h_ab0e86a066b5c68c55183cd680090a9b7}{Timer\+\_\+\+Mode}} mode, \mbox{\hyperlink{timer_8h_a8557e70e2d99c09086121fc1971d7854}{COM\+\_\+\+Mode}} com\+Mode)
+\begin{DoxyCompactList}\small\item\em Initialize the timer 0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{timer_8c_aaed1e3c1198d785e3d5d0716e0aa9022}{timer0\+\_\+start}} (\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} Cmp\+Value, \mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49}{clk\+\_\+source\+\_\+\+T0}} prescalor)
+\begin{DoxyCompactList}\small\item\em Start the timer 0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{timer_8c_a9180e184d96bacc8baa49a7a2ee1bfb3}{timer0\+\_\+stop}} ()
+\begin{DoxyCompactList}\small\item\em stop the timer 0 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Moataz Khaled 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/09-\/12
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{timer_8c_a34f4f2532ae60c90c1574c22b0609606}\label{timer_8c_a34f4f2532ae60c90c1574c22b0609606}} 
+\index{timer.c@{timer.c}!timer0\_Init@{timer0\_Init}}
+\index{timer0\_Init@{timer0\_Init}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{timer0\_Init()}{timer0\_Init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} timer0\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{timer_8h_ab0e86a066b5c68c55183cd680090a9b7}{Timer\+\_\+\+Mode}}}]{mode,  }\item[{\mbox{\hyperlink{timer_8h_a8557e70e2d99c09086121fc1971d7854}{COM\+\_\+\+Mode}}}]{com\+Mode }\end{DoxyParamCaption})}
+
+
+
+Initialize the timer 0. 
+
+Initialize the TCCR0 set the Compare Match Output Mode set the WGM01 and WGM00 
+\begin{DoxyParams}{Parameters}
+{\em mode} & determine which mode will be used for counting and overflow of the interrupt \\
+\hline
+{\em com\+Mode} & determine the compare match output mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status Ok for no error occurs, Not\+\_\+\+Ok for error during intialization 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{timer_8c_a34f4f2532ae60c90c1574c22b0609606_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{timer_8c_aaed1e3c1198d785e3d5d0716e0aa9022}\label{timer_8c_aaed1e3c1198d785e3d5d0716e0aa9022}} 
+\index{timer.c@{timer.c}!timer0\_start@{timer0\_start}}
+\index{timer0\_start@{timer0\_start}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{timer0\_start()}{timer0\_start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} timer0\+\_\+start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{Cmp\+Value,  }\item[{\mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49}{clk\+\_\+source\+\_\+\+T0}}}]{prescalor }\end{DoxyParamCaption})}
+
+
+
+Start the timer 0. 
+
+set the OCR0 with the cmp value set the prescalor in TCCR0 
+\begin{DoxyParams}{Parameters}
+{\em Cmp\+Value} & the compare value at with the reset will occur \\
+\hline
+{\em prescalor} & the value of the prescalor (in the project it prescalor 64 will be used) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status returns ok after it starts the timer. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8c_aaed1e3c1198d785e3d5d0716e0aa9022_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{timer_8c_a9180e184d96bacc8baa49a7a2ee1bfb3}\label{timer_8c_a9180e184d96bacc8baa49a7a2ee1bfb3}} 
+\index{timer.c@{timer.c}!timer0\_stop@{timer0\_stop}}
+\index{timer0\_stop@{timer0\_stop}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{timer0\_stop()}{timer0\_stop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} timer0\+\_\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+stop the timer 0 
+
+Clear TCCR0 and OCR0 \begin{DoxyReturn}{Returns}
+Status returns ok after it stops the timer. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8c_a9180e184d96bacc8baa49a7a2ee1bfb3_icgraph}
+\end{center}
+\end{figure}

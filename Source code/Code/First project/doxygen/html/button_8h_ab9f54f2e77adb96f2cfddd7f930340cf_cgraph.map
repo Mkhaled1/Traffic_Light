@@ -1,0 +1,4 @@
+<map id="BUTTON_Init" name="BUTTON_Init">
+<area shape="rect" id="node1" title="Initialize DIO PIN as input." alt="" coords="5,5,103,31"/>
+<area shape="rect" id="node2" href="$dio_8c.html#a5562321915cff9c4f693e4f60f402bbe" title="Initialize the pin of the port with the required direction." alt="" coords="151,5,219,31"/>
+</map>

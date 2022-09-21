@@ -1,0 +1,131 @@
+\hypertarget{button_8h}{}\doxysection{ECUL/\+Button Driver/button.h File Reference}
+\label{button_8h}\index{ECUL/Button Driver/button.h@{ECUL/Button Driver/button.h}}
+
+
+button Driver that intialize and operates the DIO Pins as inputs connected to buttons  
+
+
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+DIO Driver/dio.\+h\char`\"{}}\newline
+Include dependency graph for button.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{button_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{button_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{button_8h_ad1b595eec4a67fd291eb490330ba1656}{PEDESTRIAN\+\_\+\+BUTTON}}~\mbox{\hyperlink{_registers_8h_a903210ad84aed4458cbc75b489f9bb7e}{PIN2}}
+\begin{DoxyCompactList}\small\item\em Definition of the Pedestrian button to be PIN2 in PORTB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{button_8h_ab9f54f2e77adb96f2cfddd7f930340cf}{BUTTON\+\_\+\+Init}} (\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} button\+Port, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} button\+Pin)
+\begin{DoxyCompactList}\small\item\em Initialize DIO PIN as input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{button_8h_ada276b2280a743efc42379085f53f436}{BUTTON\+\_\+read}} (\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} button\+Port, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} button\+Pin, volatile \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$value)
+\begin{DoxyCompactList}\small\item\em Reads the input comming from the button connected to the microcontroller pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+button Driver that intialize and operates the DIO Pins as inputs connected to buttons 
+
+\begin{DoxyAuthor}{Author}
+Moataz Khaled 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/09-\/12
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{button_8h_ad1b595eec4a67fd291eb490330ba1656}\label{button_8h_ad1b595eec4a67fd291eb490330ba1656}} 
+\index{button.h@{button.h}!PEDESTRIAN\_BUTTON@{PEDESTRIAN\_BUTTON}}
+\index{PEDESTRIAN\_BUTTON@{PEDESTRIAN\_BUTTON}!button.h@{button.h}}
+\doxysubsubsection{\texorpdfstring{PEDESTRIAN\_BUTTON}{PEDESTRIAN\_BUTTON}}
+{\footnotesize\ttfamily \#define PEDESTRIAN\+\_\+\+BUTTON~\mbox{\hyperlink{_registers_8h_a903210ad84aed4458cbc75b489f9bb7e}{PIN2}}}
+
+
+
+Definition of the Pedestrian button to be PIN2 in PORTB. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{button_8h_ab9f54f2e77adb96f2cfddd7f930340cf}\label{button_8h_ab9f54f2e77adb96f2cfddd7f930340cf}} 
+\index{button.h@{button.h}!BUTTON\_Init@{BUTTON\_Init}}
+\index{BUTTON\_Init@{BUTTON\_Init}!button.h@{button.h}}
+\doxysubsubsection{\texorpdfstring{BUTTON\_Init()}{BUTTON\_Init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} BUTTON\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{button\+Port,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{button\+Pin }\end{DoxyParamCaption})}
+
+
+
+Initialize DIO PIN as input. 
+
+calls the DIO\+\_\+init passing the dirction value as IN to set provided pin in the port as input 
+\begin{DoxyParams}{Parameters}
+{\em button\+Port} & contains in which port the pin will be intialized as an input \\
+\hline
+{\em button\+Pin} & contains which pin will be intialized as an input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status returns Not\+\_\+\+Ok if the intiailization fails, ekse returns Ok. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{button_8h_ab9f54f2e77adb96f2cfddd7f930340cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{button_8h_ab9f54f2e77adb96f2cfddd7f930340cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{button_8h_ada276b2280a743efc42379085f53f436}\label{button_8h_ada276b2280a743efc42379085f53f436}} 
+\index{button.h@{button.h}!BUTTON\_read@{BUTTON\_read}}
+\index{BUTTON\_read@{BUTTON\_read}!button.h@{button.h}}
+\doxysubsubsection{\texorpdfstring{BUTTON\_read()}{BUTTON\_read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} BUTTON\+\_\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{button\+Port,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{button\+Pin,  }\item[{volatile \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Reads the input comming from the button connected to the microcontroller pin. 
+
+calls the DIO passing the pointer value to get the status of the PIN 
+\begin{DoxyParams}{Parameters}
+{\em button\+Port} & port to be accessed (PORTA, PORTB, PORTC, PORTD) \\
+\hline
+{\em button\+Pin} & Pin to be accessed \\
+\hline
+{\em value} & pointer that holds the state of the pin (high or low) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{button_8h_ada276b2280a743efc42379085f53f436_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,4 @@
+<map id="AppStart" name="AppStart">
+<area shape="rect" id="node1" title="AppStart determine which mode the program is on and in return will detemine the illumination of the c..." alt="" coords="104,5,177,31"/>
+<area shape="rect" id="node2" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Program main function." alt="" coords="5,5,56,31"/>
+</map>

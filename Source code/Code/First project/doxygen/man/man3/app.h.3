@@ -1,0 +1,175 @@
+.TH "App/app.h" 3 "Tue Sep 13 2022" "Trafic Light LED" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+App/app.h \- Coniatins the needed definition of the macros, variables and functions used by the application\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBON_DELAY\fP   5000"
+.br
+.RI "The delay time for the LEDs\&. "
+.ti -1c
+.RI "#define \fBTOGGLE_DELAY\fP   1000"
+.br
+.RI "The delay used for toggling of the yellow led\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef enum \fBMode\fP \fBMode\fP"
+.br
+.RI "enum to hold in which mode the program is "
+.ti -1c
+.RI "typedef enum \fBLedMode\fP \fBLedMode\fP"
+.br
+.RI "enum to hold in which led state the program is "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBMode\fP { \fBNormal\fP, \fBPedestrian\fP }"
+.br
+.RI "enum to hold in which mode the program is "
+.ti -1c
+.RI "enum \fBLedMode\fP { \fBGreen\fP, \fBYellow\fP, \fBRed\fP, \fBNON\fP }"
+.br
+.RI "enum to hold in which led state the program is "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAppStart\fP ()"
+.br
+.RI "AppStart determine which mode the program is on and in return will detemine the illumination of the car and pedestrian LEDs accordingly\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBLEDS_OFF\fP ()"
+.br
+.ti -1c
+.RI "\fBStatus\fP \fBBlink_CAR_YELLOW\fP ()"
+.br
+.RI "blink the car yellow LED for 5 seconds "
+.ti -1c
+.RI "\fBStatus\fP \fBBlink_Both_YELLOW\fP ()"
+.br
+.RI "blink the both yellow LEDs for 5 seconds "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Coniatins the needed definition of the macros, variables and functions used by the application\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Moataz 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+September 2022 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ON_DELAY   5000"
+
+.PP
+The delay time for the LEDs\&. 
+.SS "#define TOGGLE_DELAY   1000"
+
+.PP
+The delay used for toggling of the yellow led\&. 
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef enum \fBLedMode\fP \fBLedMode\fP"
+
+.PP
+enum to hold in which led state the program is 
+.SS "typedef enum \fBMode\fP \fBMode\fP"
+
+.PP
+enum to hold in which mode the program is 
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBLedMode\fP"
+
+.PP
+enum to hold in which led state the program is 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIGreen \fP\fP
+The Green led is On\&. 
+.TP
+\fB\fIYellow \fP\fP
+The yellow led is blinking\&. 
+.TP
+\fB\fIRed \fP\fP
+The red led is on\&. 
+.TP
+\fB\fINON \fP\fP
+Non of the LEDS are on\&. 
+.SS "enum \fBMode\fP"
+
+.PP
+enum to hold in which mode the program is 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINormal \fP\fP
+The program is in Car normal mode\&. 
+.TP
+\fB\fIPedestrian \fP\fP
+The program is in pedestrian mode\&. 
+.SH "Function Documentation"
+.PP 
+.SS "void AppStart ()"
+
+.PP
+AppStart determine which mode the program is on and in return will detemine the illumination of the car and pedestrian LEDs accordingly\&. 
+.SS "\fBStatus\fP Blink_Both_YELLOW ()"
+
+.PP
+blink the both yellow LEDs for 5 seconds calls LED toggle passing the car yellow LED parameters then delay 1 ms in a loop of 5 iterations 
+.PP
+\fBReturns\fP
+.RS 4
+Status returns not ok if failure occurs during toggling or delay, otherwise return Ok 
+.RE
+.PP
+
+.SS "\fBStatus\fP Blink_CAR_YELLOW ()"
+
+.PP
+blink the car yellow LED for 5 seconds calls LED toggle passing the car yellow LED parameters then delay 1 ms in a loop of 5 iterations 
+.PP
+\fBReturns\fP
+.RS 4
+Status returns not ok if failure occurs during toggling or delay, otherwise return Ok 
+.RE
+.PP
+
+.SS "\fBStatus\fP LEDS_OFF ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+Status 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Trafic Light LED from the source code\&.

@@ -1,0 +1,106 @@
+.TH "MCAL/Timer/timer.c" 3 "Tue Sep 13 2022" "Trafic Light LED" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MCAL/Timer/timer.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'timer\&.h'\fP
+.br
+\fC#include '\&.\&./Interrupts\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStatus\fP \fBtimer0_Init\fP (\fBTimer_Mode\fP mode, \fBCOM_Mode\fP comMode)"
+.br
+.RI "Initialize the timer 0\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBtimer0_start\fP (\fBuint8_t\fP CmpValue, \fBclk_source_T0\fP prescalor)"
+.br
+.RI "Start the timer 0\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBtimer0_stop\fP ()"
+.br
+.RI "stop the timer 0 "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBAuthor\fP
+.RS 4
+Moataz Khaled 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+0\&.1 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2022-09-12
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2022 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBStatus\fP timer0_Init (\fBTimer_Mode\fP mode, \fBCOM_Mode\fP comMode)"
+
+.PP
+Initialize the timer 0\&. Initialize the TCCR0 set the Compare Match Output Mode set the WGM01 and WGM00 
+.PP
+\fBParameters\fP
+.RS 4
+\fImode\fP determine which mode will be used for counting and overflow of the interrupt 
+.br
+\fIcomMode\fP determine the compare match output mode 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status Ok for no error occurs, Not_Ok for error during intialization 
+.RE
+.PP
+
+.SS "\fBStatus\fP timer0_start (\fBuint8_t\fP CmpValue, \fBclk_source_T0\fP prescalor)"
+
+.PP
+Start the timer 0\&. set the OCR0 with the cmp value set the prescalor in TCCR0 
+.PP
+\fBParameters\fP
+.RS 4
+\fICmpValue\fP the compare value at with the reset will occur 
+.br
+\fIprescalor\fP the value of the prescalor (in the project it prescalor 64 will be used) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status returns ok after it starts the timer\&. 
+.RE
+.PP
+
+.SS "\fBStatus\fP timer0_stop ()"
+
+.PP
+stop the timer 0 Clear TCCR0 and OCR0 
+.PP
+\fBReturns\fP
+.RS 4
+Status returns ok after it stops the timer\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Trafic Light LED from the source code\&.

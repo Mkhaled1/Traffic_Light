@@ -1,0 +1,286 @@
+\hypertarget{main_8c}{}\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+
+
+the application main function and App\+\_\+start function  
+
+
+{\ttfamily \#include \char`\"{}ECUL/\+Button Driver/button.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ECUL/\+LED Driver/led.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Service/\+Delay/delay\+\_\+ms.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL/\+Timer/timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MCAL/\+Interrupts.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}App/app.\+h\char`\"{}}\newline
+Include dependency graph for main.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}}~1000000U
+\begin{DoxyCompactList}\small\item\em Clock frequency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em Program main function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_aae2284072a3a912224316e1a904e3487}{App\+Start}} ()
+\begin{DoxyCompactList}\small\item\em App\+Start determine which mode the program is on and in return will detemine the illumination of the car and pedestrian LEDs accordingly. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{main_8c_af2cc73ed630655a8bed565df8781be08}{LEDS\+\_\+\+OFF}} ()
+\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{main_8c_a30e6cbcfe5255b053026a8f6260a72ba}{Blink\+\_\+\+CAR\+\_\+\+YELLOW}} ()
+\begin{DoxyCompactList}\small\item\em blink the car yellow LED for 5 seconds \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{main_8c_ab6d849ab657ba78667931745edc56254}{Blink\+\_\+\+Both\+\_\+\+YELLOW}} ()
+\begin{DoxyCompactList}\small\item\em blink the both yellow LEDs for 5 seconds \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8c_a8ee0ec9bf2e87b8e9546900a0086c7ee}{ISR}} (\mbox{\hyperlink{_interrupts_8h_adf5dd6733f063b4848755903a3c27ab7}{EXT\+\_\+\+INT\+\_\+0}})
+\begin{DoxyCompactList}\small\item\em ISR will shift the state from Normal to Pedestrian Upon button press. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{app_8h_a46c8a310cf4c094f8c80e1cb8dc1f911}{Mode}} \mbox{\hyperlink{main_8c_abd94ded7cb6d0d29c553f52d2d926623}{current\+Mode}} = \mbox{\hyperlink{app_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a5ecbcf0afce98b042f35ec71ba03fa4b}{Normal}}
+\begin{DoxyCompactList}\small\item\em The state of the program. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{app_8h_abb615c23d3564bd7ace281914d711056}{Led\+Mode}} \mbox{\hyperlink{main_8c_adf58096244fa9a3c7c58f0e311971416}{current\+\_\+car\+Led\+\_\+\+Mode}} = \mbox{\hyperlink{app_8h_abb615c23d3564bd7ace281914d711056ad0784a3f969fe736e8b271a5a161d106}{Green}}
+\begin{DoxyCompactList}\small\item\em The variable holds the currently illuminated LED. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{app_8h_abb615c23d3564bd7ace281914d711056}{Led\+Mode}} \mbox{\hyperlink{main_8c_ac7db14c51bcb7b0e924321056dd6a034}{previous\+\_\+car\+Led\+\_\+\+Mode}} = \mbox{\hyperlink{app_8h_abb615c23d3564bd7ace281914d711056ad0784a3f969fe736e8b271a5a161d106}{Green}}
+\begin{DoxyCompactList}\small\item\em The variable holds the previously illuminated LED. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{main_8c_aa4052243b0be641aab93b17feccf3bbe}{Flag}} = \mbox{\hyperlink{_types_8h_aa93f0eb578d23995850d61f7d61c55c1}{FALSE}}
+\begin{DoxyCompactList}\small\item\em The flag which determine if the interrupt is fired or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{app_8h_abb615c23d3564bd7ace281914d711056}{Led\+Mode}} \mbox{\hyperlink{main_8c_a1ec7c7c77ace65baacc9b21398343865}{First\+State}}
+\begin{DoxyCompactList}\small\item\em The variable shows which LED was illuminated when the interrupt was fired. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{main_8c_a5b11a3c96a8cd2923d7a8602e47a1dfc}{App\+\_\+state}}
+\begin{DoxyCompactList}\small\item\em holds the status of the running application \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the application main function and App\+\_\+start function 
+
+\begin{DoxyAuthor}{Author}
+Moataz 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+September 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{main_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{main.c@{main.c}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+CPU~1000000U}
+
+
+
+Clock frequency. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_aae2284072a3a912224316e1a904e3487}\label{main_8c_aae2284072a3a912224316e1a904e3487}} 
+\index{main.c@{main.c}!AppStart@{AppStart}}
+\index{AppStart@{AppStart}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{AppStart()}{AppStart()}}
+{\footnotesize\ttfamily void App\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+App\+Start determine which mode the program is on and in return will detemine the illumination of the car and pedestrian LEDs accordingly. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_aae2284072a3a912224316e1a904e3487_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{main_8c_aae2284072a3a912224316e1a904e3487_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_ab6d849ab657ba78667931745edc56254}\label{main_8c_ab6d849ab657ba78667931745edc56254}} 
+\index{main.c@{main.c}!Blink\_Both\_YELLOW@{Blink\_Both\_YELLOW}}
+\index{Blink\_Both\_YELLOW@{Blink\_Both\_YELLOW}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Blink\_Both\_YELLOW()}{Blink\_Both\_YELLOW()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} Blink\+\_\+\+Both\+\_\+\+YELLOW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+blink the both yellow LEDs for 5 seconds 
+
+calls LED toggle passing the car yellow LED parameters then delay 1 ms in a loop of 5 iterations \begin{DoxyReturn}{Returns}
+Status returns not ok if failure occurs during toggling or delay, otherwise return Ok 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_ab6d849ab657ba78667931745edc56254_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_ab6d849ab657ba78667931745edc56254_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a30e6cbcfe5255b053026a8f6260a72ba}\label{main_8c_a30e6cbcfe5255b053026a8f6260a72ba}} 
+\index{main.c@{main.c}!Blink\_CAR\_YELLOW@{Blink\_CAR\_YELLOW}}
+\index{Blink\_CAR\_YELLOW@{Blink\_CAR\_YELLOW}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Blink\_CAR\_YELLOW()}{Blink\_CAR\_YELLOW()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} Blink\+\_\+\+CAR\+\_\+\+YELLOW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+blink the car yellow LED for 5 seconds 
+
+calls LED toggle passing the car yellow LED parameters then delay 1 ms in a loop of 5 iterations \begin{DoxyReturn}{Returns}
+Status returns not ok if failure occurs during toggling or delay, otherwise return Ok 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a30e6cbcfe5255b053026a8f6260a72ba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a30e6cbcfe5255b053026a8f6260a72ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a8ee0ec9bf2e87b8e9546900a0086c7ee}\label{main_8c_a8ee0ec9bf2e87b8e9546900a0086c7ee}} 
+\index{main.c@{main.c}!ISR@{ISR}}
+\index{ISR@{ISR}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}}
+{\footnotesize\ttfamily ISR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_interrupts_8h_adf5dd6733f063b4848755903a3c27ab7}{EXT\+\_\+\+INT\+\_\+0}}}]{ }\end{DoxyParamCaption})}
+
+
+
+ISR will shift the state from Normal to Pedestrian Upon button press. 
+
+the ISR will be fired with the button is pressed Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{main_8c_a8ee0ec9bf2e87b8e9546900a0086c7ee_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_af2cc73ed630655a8bed565df8781be08}\label{main_8c_af2cc73ed630655a8bed565df8781be08}} 
+\index{main.c@{main.c}!LEDS\_OFF@{LEDS\_OFF}}
+\index{LEDS\_OFF@{LEDS\_OFF}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{LEDS\_OFF()}{LEDS\_OFF()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} LEDS\+\_\+\+OFF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Status 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{main_8c_af2cc73ed630655a8bed565df8781be08_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{main_8c_af2cc73ed630655a8bed565df8781be08_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Program main function. 
+
+Initializers the needed drivers for the application calls the Appstart to start the application \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{led_8c_a17619bd8c32424e4d8aa668d8160b66d}{LED\+\_\+\+Init()}} \mbox{\hyperlink{button_8c_ab9f54f2e77adb96f2cfddd7f930340cf}{BUTTON\+\_\+\+Init()}} \mbox{\hyperlink{delay__ms_8c_a4c7ac5aee086484cab84e9e44c798faa}{delay\+\_\+init\+\_\+0()}} \mbox{\hyperlink{main_8c_aae2284072a3a912224316e1a904e3487}{App\+Start()}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int 0 if the programs has no errors, 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8c_a5b11a3c96a8cd2923d7a8602e47a1dfc}\label{main_8c_a5b11a3c96a8cd2923d7a8602e47a1dfc}} 
+\index{main.c@{main.c}!App\_state@{App\_state}}
+\index{App\_state@{App\_state}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{App\_state}{App\_state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} App\+\_\+state}
+
+
+
+holds the status of the running application 
+
+\mbox{\Hypertarget{main_8c_adf58096244fa9a3c7c58f0e311971416}\label{main_8c_adf58096244fa9a3c7c58f0e311971416}} 
+\index{main.c@{main.c}!current\_carLed\_Mode@{current\_carLed\_Mode}}
+\index{current\_carLed\_Mode@{current\_carLed\_Mode}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{current\_carLed\_Mode}{current\_carLed\_Mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{app_8h_abb615c23d3564bd7ace281914d711056}{Led\+Mode}} current\+\_\+car\+Led\+\_\+\+Mode = \mbox{\hyperlink{app_8h_abb615c23d3564bd7ace281914d711056ad0784a3f969fe736e8b271a5a161d106}{Green}}}
+
+
+
+The variable holds the currently illuminated LED. 
+
+\mbox{\Hypertarget{main_8c_abd94ded7cb6d0d29c553f52d2d926623}\label{main_8c_abd94ded7cb6d0d29c553f52d2d926623}} 
+\index{main.c@{main.c}!currentMode@{currentMode}}
+\index{currentMode@{currentMode}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{currentMode}{currentMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{app_8h_a46c8a310cf4c094f8c80e1cb8dc1f911}{Mode}} current\+Mode = \mbox{\hyperlink{app_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a5ecbcf0afce98b042f35ec71ba03fa4b}{Normal}}}
+
+
+
+The state of the program. 
+
+\mbox{\Hypertarget{main_8c_a1ec7c7c77ace65baacc9b21398343865}\label{main_8c_a1ec7c7c77ace65baacc9b21398343865}} 
+\index{main.c@{main.c}!FirstState@{FirstState}}
+\index{FirstState@{FirstState}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{FirstState}{FirstState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{app_8h_abb615c23d3564bd7ace281914d711056}{Led\+Mode}} First\+State}
+
+
+
+The variable shows which LED was illuminated when the interrupt was fired. 
+
+\mbox{\Hypertarget{main_8c_aa4052243b0be641aab93b17feccf3bbe}\label{main_8c_aa4052243b0be641aab93b17feccf3bbe}} 
+\index{main.c@{main.c}!Flag@{Flag}}
+\index{Flag@{Flag}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Flag}{Flag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} Flag = \mbox{\hyperlink{_types_8h_aa93f0eb578d23995850d61f7d61c55c1}{FALSE}}}
+
+
+
+The flag which determine if the interrupt is fired or not. 
+
+\mbox{\Hypertarget{main_8c_ac7db14c51bcb7b0e924321056dd6a034}\label{main_8c_ac7db14c51bcb7b0e924321056dd6a034}} 
+\index{main.c@{main.c}!previous\_carLed\_Mode@{previous\_carLed\_Mode}}
+\index{previous\_carLed\_Mode@{previous\_carLed\_Mode}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{previous\_carLed\_Mode}{previous\_carLed\_Mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{app_8h_abb615c23d3564bd7ace281914d711056}{Led\+Mode}} previous\+\_\+car\+Led\+\_\+\+Mode = \mbox{\hyperlink{app_8h_abb615c23d3564bd7ace281914d711056ad0784a3f969fe736e8b271a5a161d106}{Green}}}
+
+
+
+The variable holds the previously illuminated LED. 
+

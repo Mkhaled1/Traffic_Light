@@ -1,0 +1,110 @@
+\hypertarget{_registers_8h_source}{}\doxysection{Registers.\+h}
+\mbox{\hyperlink{_registers_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * Registers.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ *}}
+\DoxyCodeLine{4 \textcolor{comment}{ * Created: 9/6/2022 9:50:40 PM}}
+\DoxyCodeLine{5 \textcolor{comment}{ *  Author: Moataz}}
+\DoxyCodeLine{6 \textcolor{comment}{ */} }
+\DoxyCodeLine{7 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{8 \textcolor{comment}{/* All MicroController Registers for ATMEGA32A}}
+\DoxyCodeLine{9 \textcolor{comment}{*/}}
+\DoxyCodeLine{10 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#ifndef REGISTERS\_H\_}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define REGISTERS\_H\_}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{comment}{//include}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_types_8h}{Types.h}}"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{comment}{//Definitions}}
+\DoxyCodeLine{22 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{23 \textcolor{comment}{/* DIO Registers for ATMEGA32A}}
+\DoxyCodeLine{24 \textcolor{comment}{*/}}
+\DoxyCodeLine{25 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{comment}{// PORTA register}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define PORTA (*(volatile uint8\_t*) 0x3B)}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define DDRA (*(volatile uint8\_t*)0x3A)}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define PINA (*(volatile uint8\_t*) 0x39)}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{comment}{// PORTB register}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define PORTB (*(volatile uint8\_t*) 0x38)}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define DDRB (*(volatile uint8\_t*) 0x37)}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define PINB (*(volatile uint8\_t*) 0x36)}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{comment}{// PORTC register}}
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#define PORTC (*(volatile uint8\_t*) 0x35)}}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define DDRC (*(volatile uint8\_t*)0x34)}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#define PINC (*(volatile uint8\_t*) 0x33)}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{comment}{// PORTD register}}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define PORTD (*(volatile uint8\_t*) 0x32)}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define DDRD (*(volatile uint8\_t*) 0x31)}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#define PIND (*(volatile uint8\_t*) 0x30)}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{48 \textcolor{comment}{/* Timer Registers for ATMEGA32A}}
+\DoxyCodeLine{49 \textcolor{comment}{*/}}
+\DoxyCodeLine{50 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{comment}{//Timer 0 registers}}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#define TCCR0 (*(volatile uint8\_t*) 0x53)}}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#define TCNT0 (*(volatile uint8\_t*) 0x52)}}
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#define OCR0 (*(volatile uint8\_t*) 0x5C)}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{comment}{// Timer 2 registers}}
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#define TCCR2 (*(volatile uint8\_t*) 0x45)}}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#define TCNT2 (*(volatile uint8\_t*) 0x44)}}
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#define OCR2 (*(volatile uint8\_t*) 0x43)}}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#define TIFR (*(volatile uint8\_t*) 0x58)}}
+\DoxyCodeLine{64 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{65 \textcolor{comment}{/* Status Register for ATMEGA32A}}
+\DoxyCodeLine{66 \textcolor{comment}{*/}}
+\DoxyCodeLine{67 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{preprocessor}{\#define SREG (*(volatile uint8\_t*) 0x5F)}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{72 \textcolor{comment}{/* External Interrupt Registers for ATMEGA32A}}
+\DoxyCodeLine{73 \textcolor{comment}{*/}}
+\DoxyCodeLine{74 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#define MCUCR (*(volatile uint8\_t*) 0x55)}}
+\DoxyCodeLine{76 \textcolor{preprocessor}{\#define MCUCSR (*(volatile uint8\_t*) 0x54)}}
+\DoxyCodeLine{77 \textcolor{preprocessor}{\#define GICR (*(volatile uint8\_t*) 0x5B)}}
+\DoxyCodeLine{78 \textcolor{preprocessor}{\#define GIFR (*(volatile uint8\_t*) 0x5A)}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \textcolor{preprocessor}{\#define ISC00   0}}
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#define ISC01   1}}
+\DoxyCodeLine{82 \textcolor{preprocessor}{\#define INT0    6}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{85 \textcolor{comment}{/* Definition of the bits of the registers}}
+\DoxyCodeLine{86 \textcolor{comment}{*/}}
+\DoxyCodeLine{87 \textcolor{comment}{/****************************************************************/}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89 \textcolor{preprocessor}{\#define PIN0 0}}
+\DoxyCodeLine{90 \textcolor{preprocessor}{\#define PIN1 1}}
+\DoxyCodeLine{91 \textcolor{preprocessor}{\#define PIN2 2}}
+\DoxyCodeLine{92 \textcolor{preprocessor}{\#define PIN3 3}}
+\DoxyCodeLine{93 \textcolor{preprocessor}{\#define PIN4 4}}
+\DoxyCodeLine{94 \textcolor{preprocessor}{\#define PIN5 5}}
+\DoxyCodeLine{95 \textcolor{preprocessor}{\#define PIN6 6}}
+\DoxyCodeLine{96 \textcolor{preprocessor}{\#define PIN7 7}}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 \textcolor{comment}{//function like macros for register and bit accessing}}
+\DoxyCodeLine{99 \textcolor{preprocessor}{\#define bitset(byte,nbit)   ((byte) |=  (1<<(nbit)))}}
+\DoxyCodeLine{100 \textcolor{preprocessor}{\#define bitclear(byte,nbit) ((byte) \&= \string~(1<<(nbit)))}}
+\DoxyCodeLine{101 \textcolor{preprocessor}{\#define bitflip(byte,nbit)  ((byte) \string^=  (1<<(nbit)))}}
+\DoxyCodeLine{102 \textcolor{preprocessor}{\#define bitRead(byte,nbit) (((byte) \&   (1<<(nbit))) >> nbit)}}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* REGISTERS\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

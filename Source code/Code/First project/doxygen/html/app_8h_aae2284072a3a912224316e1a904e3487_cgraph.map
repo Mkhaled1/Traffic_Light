@@ -1,0 +1,14 @@
+<map id="AppStart" name="AppStart">
+<area shape="rect" id="node1" title="AppStart determine which mode the program is on and in return will detemine the illumination of the c..." alt="" coords="5,129,79,155"/>
+<area shape="rect" id="node2" href="$main_8c.html#ab6d849ab657ba78667931745edc56254" title="blink the both yellow LEDs for 5 seconds" alt="" coords="127,55,273,80"/>
+<area shape="rect" id="node3" href="$delay__ms_8c.html#a00cf3b3a6fabb99120a35495d5305df5" title="perform a delay with the required time passed in delay_ms" alt="" coords="321,55,413,80"/>
+<area shape="rect" id="node8" href="$main_8c.html#a30e6cbcfe5255b053026a8f6260a72ba" title="blink the car yellow LED for 5 seconds" alt="" coords="127,104,273,129"/>
+<area shape="rect" id="node9" href="$led_8c.html#a4b0a8a6c959732d3f6cb4ed60da13331" title="Turns LED Off." alt="" coords="332,205,403,231"/>
+<area shape="rect" id="node11" href="$led_8c.html#af09c4344af9f7b5bfacea0aba21ad240" title="Turns LED on." alt="" coords="332,255,403,280"/>
+<area shape="rect" id="node12" href="$main_8c.html#af2cc73ed630655a8bed565df8781be08" title=" " alt="" coords="155,205,245,231"/>
+<area shape="rect" id="node6" href="$led_8c.html#ac23b9cb9b3bad2c709933be0ddf23da0" title="Toggle the status of the LED." alt="" coords="323,104,412,129"/>
+<area shape="rect" id="node4" href="$timer_8c.html#aaed1e3c1198d785e3d5d0716e0aa9022" title="Start the timer 0." alt="" coords="461,5,552,31"/>
+<area shape="rect" id="node5" href="$timer_8c.html#a9180e184d96bacc8baa49a7a2ee1bfb3" title="stop the timer 0" alt="" coords="461,55,552,80"/>
+<area shape="rect" id="node7" href="$dio_8c.html#a66bc0fe366e60f31548ee264f63c0df1" title="Toggle the value of the output pin." alt="" coords="462,104,551,129"/>
+<area shape="rect" id="node10" href="$dio_8c.html#a7185f996a914f2370815a3a7f8de0736" title="write a value in the pin" alt="" coords="465,229,548,255"/>
+</map>

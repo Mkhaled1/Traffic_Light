@@ -1,0 +1,4 @@
+<map id="timer2_stop" name="timer2_stop">
+<area shape="rect" id="node1" title="stop the timer 2" alt="" coords="145,5,236,31"/>
+<area shape="rect" id="node2" href="$delay__ms_8c.html#a97fd35326b42f67653a6adab11bfc642" title="perform a delay with the required time passed in delay_ms" alt="" coords="5,5,97,31"/>
+</map>

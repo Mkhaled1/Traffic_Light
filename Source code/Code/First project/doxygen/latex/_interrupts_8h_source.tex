@@ -1,0 +1,36 @@
+\hypertarget{_interrupts_8h_source}{}\doxysection{Interrupts.\+h}
+\label{_interrupts_8h_source}\index{MCAL/Interrupts.h@{MCAL/Interrupts.h}}
+\mbox{\hyperlink{_interrupts_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * Interrupts.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ *}}
+\DoxyCodeLine{4 \textcolor{comment}{ * Created: 9/9/2022 12:34:52 AM}}
+\DoxyCodeLine{5 \textcolor{comment}{ *  Author: Moataz}}
+\DoxyCodeLine{6 \textcolor{comment}{ */} }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifndef INTERRUPTS\_H\_}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define INTERRUPTS\_H\_}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../Registers.h"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define TIMER0\_OVF  \_\_vector\_12}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define EXT\_INT\_0   \_\_vector\_1}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define EXT\_INT\_1   \_\_vector\_2}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define EXT\_INT\_2   \_\_vector\_3}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define sei() \_\_asm\_\_ \_\_volatile\_\_("{}sei"{}} ::: "{}memory"{})}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define cli() \_\_asm\_\_ \_\_volatile\_\_("{}cli"{}} ::: "{}memory"{})}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define ISR(INT\_VECT)void INT\_VECT(void)  \_\_attribute\_\_((signal,used));\(\backslash\)}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{void INT\_VECT(void)}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* INTERRUPTS\_H\_ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{33 }
+
+\end{DoxyCode}

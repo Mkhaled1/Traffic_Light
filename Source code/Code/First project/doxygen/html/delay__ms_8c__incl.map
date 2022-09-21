@@ -1,0 +1,7 @@
+<map id="Service/Delay/delay_ms.c" name="Service/Delay/delay_ms.c">
+<area shape="rect" id="node1" title="Implements Delays to be used in the program using the Timer driver." alt="" coords="5,5,177,31"/>
+<area shape="rect" id="node2" href="$delay__ms_8h.html" title=" " alt="" coords="47,79,136,104"/>
+<area shape="rect" id="node3" href="$timer_8h.html" title=" " alt="" coords="10,152,173,177"/>
+<area shape="rect" id="node4" href="$_registers_8h.html" title=" " alt="" coords="35,225,147,251"/>
+<area shape="rect" id="node5" href="$_types_8h.html" title=" " alt="" coords="57,299,125,324"/>
+</map>

@@ -1,0 +1,72 @@
+.TH "Service/Delay/delay_ms.h" 3 "Tue Sep 13 2022" "Trafic Light LED" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Service/Delay/delay_ms.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./\&.\&./MCAL/Timer/timer\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStatus\fP \fBdelay_init_0\fP (\fBTimer_Mode\fP mode, \fBCOM_Mode\fP comMode)"
+.br
+.RI "Initialize timer 0 with the provided Timer mode and compare match output mode\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBdelay_ms_0\fP (\fBuint16_t\fP delay_ms)"
+.br
+.RI "perform a delay with the required time passed in delay_ms "
+.ti -1c
+.RI "\fBStatus\fP \fBStop_delay\fP ()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBStatus\fP delay_init_0 (\fBTimer_Mode\fP mode, \fBCOM_Mode\fP comMode)"
+
+.PP
+Initialize timer 0 with the provided Timer mode and compare match output mode\&. calls the \fBtimer0_Init()\fP to initialize the timer with the provided Timer mode and compare match output mode 
+.PP
+\fBParameters\fP
+.RS 4
+\fImode\fP determine which mode will be used for counting and overflow of the interrupt 
+.br
+\fIcomMode\fP determine the compare match output mode 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBtimer0_Init()\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status Ok for no error occurs, Not_Ok for error during intialization 
+.RE
+.PP
+
+.SS "\fBStatus\fP delay_ms_0 (volatile \fBuint16_t\fP delay_ms)"
+
+.PP
+perform a delay with the required time passed in delay_ms according to the presecalor used, the function will calculate the number of overflows and the OCR and performs a loop the timer 0 reach the OCR the exact number of overflows 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdelay_ms\fP The amount of delay in milli second 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status Not_Ok if the component failed to perform the delay otherwise will return OK\&. 
+.RE
+.PP
+
+.SS "\fBStatus\fP Stop_delay ()"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Trafic Light LED from the source code\&.

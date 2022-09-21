@@ -1,0 +1,196 @@
+.TH "MCAL/Timer/timer.h" 3 "Tue Sep 13 2022" "Trafic Light LED" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MCAL/Timer/timer.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./\&.\&./Registers\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBWGM01\fP   \fBPIN3\fP"
+.br
+.ti -1c
+.RI "#define \fBWGM00\fP   \fBPIN6\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef enum \fBTimer_Mode\fP \fBTimer_Mode\fP"
+.br
+.RI "timer mode enum "
+.ti -1c
+.RI "typedef enum \fBCOM_Mode\fP \fBCOM_Mode\fP"
+.br
+.RI "Compare Match Output Mode\&. "
+.ti -1c
+.RI "typedef enum \fBclk_source_T0\fP \fBclk_source_T0\fP"
+.br
+.RI "prescalor enum for timer 0 "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTimer_Mode\fP { \fBTimer_Normal\fP = 0, \fBPhase_Correct\fP, \fBCTC\fP, \fBFast_PWM\fP }"
+.br
+.RI "timer mode enum "
+.ti -1c
+.RI "enum \fBCOM_Mode\fP { \fBNO_OUTPUT\fP =0, \fBToggle\fP, \fBClear\fP, \fBSet\fP }"
+.br
+.RI "Compare Match Output Mode\&. "
+.ti -1c
+.RI "enum \fBclk_source_T0\fP { \fBT0_No_Clk_Source\fP =0, \fBT0_No_prescalor\fP, \fBT0_Precalor_8\fP, \fBT0_Precalor_64\fP, \fBT0_Precalor_256\fP, \fBT0_Precalor_1024\fP, \fBT0_Ext_falling\fP, \fBT0_Ext_Rising\fP }"
+.br
+.RI "prescalor enum for timer 0 "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStatus\fP \fBtimer0_Init\fP (\fBTimer_Mode\fP mode, \fBCOM_Mode\fP comMode)"
+.br
+.RI "Initialize the timer 0\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBtimer0_start\fP (\fBuint8_t\fP CmpValue, \fBclk_source_T0\fP prescalor)"
+.br
+.RI "Start the timer 0\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBtimer0_stop\fP ()"
+.br
+.RI "stop the timer 0 "
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define WGM00   \fBPIN6\fP"
+
+.SS "#define WGM01   \fBPIN3\fP"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef enum \fBclk_source_T0\fP \fBclk_source_T0\fP"
+
+.PP
+prescalor enum for timer 0 
+.SS "typedef enum \fBCOM_Mode\fP \fBCOM_Mode\fP"
+
+.PP
+Compare Match Output Mode\&. 
+.SS "typedef enum \fBTimer_Mode\fP \fBTimer_Mode\fP"
+
+.PP
+timer mode enum 
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBclk_source_T0\fP"
+
+.PP
+prescalor enum for timer 0 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIT0_No_Clk_Source \fP\fP
+.TP
+\fB\fIT0_No_prescalor \fP\fP
+.TP
+\fB\fIT0_Precalor_8 \fP\fP
+.TP
+\fB\fIT0_Precalor_64 \fP\fP
+.TP
+\fB\fIT0_Precalor_256 \fP\fP
+.TP
+\fB\fIT0_Precalor_1024 \fP\fP
+.TP
+\fB\fIT0_Ext_falling \fP\fP
+.TP
+\fB\fIT0_Ext_Rising \fP\fP
+.SS "enum \fBCOM_Mode\fP"
+
+.PP
+Compare Match Output Mode\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINO_OUTPUT \fP\fP
+.TP
+\fB\fIToggle \fP\fP
+.TP
+\fB\fIClear \fP\fP
+.TP
+\fB\fISet \fP\fP
+.SS "enum \fBTimer_Mode\fP"
+
+.PP
+timer mode enum 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fITimer_Normal \fP\fP
+.TP
+\fB\fIPhase_Correct \fP\fP
+.TP
+\fB\fICTC \fP\fP
+.TP
+\fB\fIFast_PWM \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "\fBStatus\fP timer0_Init (\fBTimer_Mode\fP mode, \fBCOM_Mode\fP comMode)"
+
+.PP
+Initialize the timer 0\&. Initialize the TCCR0 set the Compare Match Output Mode set the WGM01 and WGM00 
+.PP
+\fBParameters\fP
+.RS 4
+\fImode\fP determine which mode will be used for counting and overflow of the interrupt 
+.br
+\fIcomMode\fP determine the compare match output mode 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status Ok for no error occurs, Not_Ok for error during intialization 
+.RE
+.PP
+
+.SS "\fBStatus\fP timer0_start (\fBuint8_t\fP CmpValue, \fBclk_source_T0\fP prescalor)"
+
+.PP
+Start the timer 0\&. set the OCR0 with the cmp value set the prescalor in TCCR0 
+.PP
+\fBParameters\fP
+.RS 4
+\fICmpValue\fP the compare value at with the reset will occur 
+.br
+\fIprescalor\fP the value of the prescalor (in the project it prescalor 64 will be used) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status returns ok after it starts the timer\&. 
+.RE
+.PP
+
+.SS "\fBStatus\fP timer0_stop ()"
+
+.PP
+stop the timer 0 Clear TCCR0 and OCR0 
+.PP
+\fBReturns\fP
+.RS 4
+Status returns ok after it stops the timer\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Trafic Light LED from the source code\&.

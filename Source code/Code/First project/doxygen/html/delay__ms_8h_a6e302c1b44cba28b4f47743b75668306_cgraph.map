@@ -1,0 +1,4 @@
+<map id="delay_init_2" name="delay_init_2">
+<area shape="rect" id="node1" title="Initialize timer 2 with the provided Timer mode and compare match output mode." alt="" coords="5,5,96,31"/>
+<area shape="rect" id="node2" href="$timer_8c.html#a2d21bbd96260bc7091f4a3ee89215ac6" title="Initialize the timer 2." alt="" coords="144,5,227,31"/>
+</map>

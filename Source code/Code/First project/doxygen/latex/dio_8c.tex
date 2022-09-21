@@ -1,0 +1,159 @@
+\hypertarget{dio_8c}{}\doxysection{MCAL/\+DIO Driver/dio.c File Reference}
+\label{dio_8c}\index{MCAL/DIO Driver/dio.c@{MCAL/DIO Driver/dio.c}}
+{\ttfamily \#include \char`\"{}dio.\+h\char`\"{}}\newline
+Include dependency graph for dio.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{dio_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{dio_8c_a5562321915cff9c4f693e4f60f402bbe}{DIO\+\_\+init}} (\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} pin\+Number, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} port\+Number, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} direction)
+\begin{DoxyCompactList}\small\item\em Initialize the pin of the port with the required direction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{dio_8c_a7185f996a914f2370815a3a7f8de0736}{DIO\+\_\+\+Write}} (\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} pin\+Number, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} port\+Number, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} value)
+\begin{DoxyCompactList}\small\item\em write a value in the pin \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{dio_8c_a66bc0fe366e60f31548ee264f63c0df1}{DIO\+\_\+\+Toggle}} (\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} pin\+Number, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} port\+Number)
+\begin{DoxyCompactList}\small\item\em Toggle the value of the output pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{dio_8c_af9bf54e9bd517ba60f7e76f12f33869a}{DIO\+\_\+\+Read}} (\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} pin\+Number, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} port\+Number, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$value)
+\begin{DoxyCompactList}\small\item\em Read the value of a certain PIN. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Moataz Khaled 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/09-\/12
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dio_8c_a5562321915cff9c4f693e4f60f402bbe}\label{dio_8c_a5562321915cff9c4f693e4f60f402bbe}} 
+\index{dio.c@{dio.c}!DIO\_init@{DIO\_init}}
+\index{DIO\_init@{DIO\_init}!dio.c@{dio.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_init()}{DIO\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} DIO\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{pin\+Number,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{port\+Number,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Initialize the pin of the port with the required direction. 
+
+initialize a pin in a certain port with the direction
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\+Number} & PIN that will be set \\
+\hline
+{\em port\+Number} & Port containing the PIN that will be set \\
+\hline
+{\em direction} & (IN//\+OUT) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status return Not\+\_\+\+Ok if the passed port is not in range (A-\/\texorpdfstring{$>$}{>}D) or pin number \texorpdfstring{$>$}{>} 7 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dio_8c_a5562321915cff9c4f693e4f60f402bbe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{dio_8c_af9bf54e9bd517ba60f7e76f12f33869a}\label{dio_8c_af9bf54e9bd517ba60f7e76f12f33869a}} 
+\index{dio.c@{dio.c}!DIO\_Read@{DIO\_Read}}
+\index{DIO\_Read@{DIO\_Read}!dio.c@{dio.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_Read()}{DIO\_Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} DIO\+\_\+\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{pin\+Number,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{port\+Number,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Read the value of a certain PIN. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\+Number} & PIN that will be read \\
+\hline
+{\em port\+Number} & Port containing the PIN that will be read \\
+\hline
+{\em value} & pointer holds the state of the PIN (HIGH or LOW) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status return Not\+\_\+\+Ok if the passed pin direction is in not set as input or pin number \texorpdfstring{$>$}{>} 7, otherwise return Ok 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{dio_8c_af9bf54e9bd517ba60f7e76f12f33869a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{dio_8c_a66bc0fe366e60f31548ee264f63c0df1}\label{dio_8c_a66bc0fe366e60f31548ee264f63c0df1}} 
+\index{dio.c@{dio.c}!DIO\_Toggle@{DIO\_Toggle}}
+\index{DIO\_Toggle@{DIO\_Toggle}!dio.c@{dio.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_Toggle()}{DIO\_Toggle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} DIO\+\_\+\+Toggle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{pin\+Number,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{port\+Number }\end{DoxyParamCaption})}
+
+
+
+Toggle the value of the output pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\+Number} & PIN that will be toggled \\
+\hline
+{\em port\+Number} & Port containing the PIN that will be toggled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status return Not\+\_\+\+Ok if the passed pin direction is in not set as output or pin number \texorpdfstring{$>$}{>} 7, otherwise return Ok 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dio_8c_a66bc0fe366e60f31548ee264f63c0df1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{dio_8c_a7185f996a914f2370815a3a7f8de0736}\label{dio_8c_a7185f996a914f2370815a3a7f8de0736}} 
+\index{dio.c@{dio.c}!DIO\_Write@{DIO\_Write}}
+\index{DIO\_Write@{DIO\_Write}!dio.c@{dio.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_Write()}{DIO\_Write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} DIO\+\_\+\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{pin\+Number,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{port\+Number,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{value }\end{DoxyParamCaption})}
+
+
+
+write a value in the pin 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\+Number} & PIN that will be set \\
+\hline
+{\em port\+Number} & Port containing the PIN that will be set \\
+\hline
+{\em value} & (HIGH/\+LOW) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status return Not\+\_\+\+Ok if the passed pin direction is in not set as output or pin number \texorpdfstring{$>$}{>} 7, otherwise return Ok 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dio_8c_a7185f996a914f2370815a3a7f8de0736_icgraph}
+\end{center}
+\end{figure}

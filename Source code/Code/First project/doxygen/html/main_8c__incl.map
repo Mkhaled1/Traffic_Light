@@ -1,0 +1,12 @@
+<map id="main.c" name="main.c">
+<area shape="rect" id="node1" title="the application main function and App_start function" alt="" coords="386,5,447,31"/>
+<area shape="rect" id="node2" href="$button_8h.html" title="button Driver that intialize and operates the DIO Pins as inputs connected to buttons" alt="" coords="5,79,140,119"/>
+<area shape="rect" id="node6" href="$_interrupts_8h.html" title=" " alt="" coords="297,255,395,280"/>
+<area shape="rect" id="node7" href="$led_8h.html" title=" " alt="" coords="164,86,317,111"/>
+<area shape="rect" id="node8" href="$delay__ms_8h.html" title=" " alt="" coords="393,86,565,111"/>
+<area shape="rect" id="node9" href="$timer_8h.html" title=" " alt="" coords="398,174,561,199"/>
+<area shape="rect" id="node10" href="$app_8h.html" title="Coniatins the needed definition of the macros, variables and functions used by the application." alt="" coords="641,86,723,111"/>
+<area shape="rect" id="node3" href="$dio_8h.html" title=" " alt="" coords="171,167,315,207"/>
+<area shape="rect" id="node4" href="$_registers_8h.html" title=" " alt="" coords="290,328,402,353"/>
+<area shape="rect" id="node5" href="$_types_8h.html" title=" " alt="" coords="312,401,380,427"/>
+</map>

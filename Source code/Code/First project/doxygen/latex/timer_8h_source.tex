@@ -1,0 +1,59 @@
+\hypertarget{timer_8h_source}{}\doxysection{timer.\+h}
+\label{timer_8h_source}\index{MCAL/Timer/timer.h@{MCAL/Timer/timer.h}}
+\mbox{\hyperlink{timer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * timer1.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ *}}
+\DoxyCodeLine{4 \textcolor{comment}{ * Created: 9/8/2022 9:41:41 PM}}
+\DoxyCodeLine{5 \textcolor{comment}{ *  Author: Moataz}}
+\DoxyCodeLine{6 \textcolor{comment}{ */} }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef TIMER0\_H\_}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define TIMER0\_H\_}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../../Registers.h"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define WGM01 PIN3}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define WGM00 PIN6}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{20 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \mbox{\hyperlink{timer_8h_ab0e86a066b5c68c55183cd680090a9b7}{Timer\_Mode}}\{}
+\DoxyCodeLine{21     \mbox{\hyperlink{timer_8h_ab0e86a066b5c68c55183cd680090a9b7a4a3c6c433afabf3712db77f7474e3f1a}{Timer\_Normal}} = 0,}
+\DoxyCodeLine{22     \mbox{\hyperlink{timer_8h_ab0e86a066b5c68c55183cd680090a9b7abe1014d28c6074c4739f04643050d579}{Phase\_Correct}},}
+\DoxyCodeLine{23     \mbox{\hyperlink{timer_8h_ab0e86a066b5c68c55183cd680090a9b7ad472717efbd11a2e3c7a10a2bcece779}{CTC}},}
+\DoxyCodeLine{24     \mbox{\hyperlink{timer_8h_ab0e86a066b5c68c55183cd680090a9b7a99c263aff7600e5a2deb490a05dba2b2}{Fast\_PWM}}}
+\DoxyCodeLine{25     \}\mbox{\hyperlink{timer_8h_ab0e86a066b5c68c55183cd680090a9b7}{Timer\_Mode}};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{28 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \mbox{\hyperlink{timer_8h_a8557e70e2d99c09086121fc1971d7854}{COM\_Mode}}\{}
+\DoxyCodeLine{29     \mbox{\hyperlink{timer_8h_a8557e70e2d99c09086121fc1971d7854ac36d1c53b46b892064c48b40693036be}{NO\_OUTPUT}} =0,}
+\DoxyCodeLine{30     \mbox{\hyperlink{timer_8h_a8557e70e2d99c09086121fc1971d7854a0884ca4af1f5df7de6604f540de37743}{Toggle}},\textcolor{comment}{//only applicable in CTC mode}}
+\DoxyCodeLine{31     \mbox{\hyperlink{timer_8h_a8557e70e2d99c09086121fc1971d7854a686cafdfb7b1ff912da98444ff195cc0}{Clear}},}
+\DoxyCodeLine{32     \mbox{\hyperlink{timer_8h_a8557e70e2d99c09086121fc1971d7854a20120ef9c542d271e929c93efa56b665}{Set}}}
+\DoxyCodeLine{33     \}\mbox{\hyperlink{timer_8h_a8557e70e2d99c09086121fc1971d7854}{COM\_Mode}};  }
+\DoxyCodeLine{34 }
+\DoxyCodeLine{36 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49}{clk\_source\_T0}} \{}
+\DoxyCodeLine{37     \mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49ac3fbcfe51b4fdca193acf4ef969ed6b7}{T0\_No\_Clk\_Source}} =0,}
+\DoxyCodeLine{38     \mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49a69242371b537bb48e64119d2f030221a}{T0\_No\_prescalor}},}
+\DoxyCodeLine{39     \mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49a7a309a9391ead94adb21eeb928764a54}{T0\_Precalor\_8}},}
+\DoxyCodeLine{40     \mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49a75cd827f28a21efbecfb805591ca8d50}{T0\_Precalor\_64}},}
+\DoxyCodeLine{41     \mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49a367c02951c112d910523bc78631772c5}{T0\_Precalor\_256}},}
+\DoxyCodeLine{42     \mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49a0f0afadcafb38a023e621c1098d19fca}{T0\_Precalor\_1024}},}
+\DoxyCodeLine{43     \mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49a884083e28e4277cd25a3bcb2836a8220}{T0\_Ext\_falling}},}
+\DoxyCodeLine{44     \mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49a28ebb6f764d49b914d505ebec7359b11}{T0\_Ext\_Rising}}}
+\DoxyCodeLine{45     \}\mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49}{clk\_source\_T0}};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{timer_8h_a34f4f2532ae60c90c1574c22b0609606}{timer0\_Init}}(\mbox{\hyperlink{timer_8h_ab0e86a066b5c68c55183cd680090a9b7}{Timer\_Mode}} mode,\mbox{\hyperlink{timer_8h_a8557e70e2d99c09086121fc1971d7854}{COM\_Mode}} comMode);}
+\DoxyCodeLine{50 \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{timer_8h_aaed1e3c1198d785e3d5d0716e0aa9022}{timer0\_start}}(\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\_t}} CmpValue,\mbox{\hyperlink{timer_8h_ad844afc91e79c6751a83f48c11203c49}{clk\_source\_T0}} prescalor);}
+\DoxyCodeLine{51 \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{timer_8h_a9180e184d96bacc8baa49a7a2ee1bfb3}{timer0\_stop}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* TIMER1\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

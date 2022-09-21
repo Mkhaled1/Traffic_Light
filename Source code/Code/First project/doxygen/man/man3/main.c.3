@@ -1,0 +1,194 @@
+.TH "main.c" 3 "Tue Sep 13 2022" "Trafic Light LED" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.c \- the application main function and App_start function  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'ECUL/Button Driver/button\&.h'\fP
+.br
+\fC#include 'ECUL/LED Driver/led\&.h'\fP
+.br
+\fC#include 'Service/Delay/delay_ms\&.h'\fP
+.br
+\fC#include 'MCAL/Timer/timer\&.h'\fP
+.br
+\fC#include 'MCAL/Interrupts\&.h'\fP
+.br
+\fC#include 'App/app\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBF_CPU\fP   1000000U"
+.br
+.RI "Clock frequency\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.RI "Program main function\&. "
+.ti -1c
+.RI "void \fBAppStart\fP ()"
+.br
+.RI "AppStart determine which mode the program is on and in return will detemine the illumination of the car and pedestrian LEDs accordingly\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBLEDS_OFF\fP ()"
+.br
+.ti -1c
+.RI "\fBStatus\fP \fBBlink_CAR_YELLOW\fP ()"
+.br
+.RI "blink the car yellow LED for 5 seconds "
+.ti -1c
+.RI "\fBStatus\fP \fBBlink_Both_YELLOW\fP ()"
+.br
+.RI "blink the both yellow LEDs for 5 seconds "
+.ti -1c
+.RI "\fBISR\fP (\fBEXT_INT_0\fP)"
+.br
+.RI "ISR will shift the state from Normal to Pedestrian Upon button press\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBMode\fP \fBcurrentMode\fP = \fBNormal\fP"
+.br
+.RI "The state of the program\&. "
+.ti -1c
+.RI "\fBLedMode\fP \fBcurrent_carLed_Mode\fP = \fBGreen\fP"
+.br
+.RI "The variable holds the currently illuminated LED\&. "
+.ti -1c
+.RI "\fBLedMode\fP \fBprevious_carLed_Mode\fP = \fBGreen\fP"
+.br
+.RI "The variable holds the previously illuminated LED\&. "
+.ti -1c
+.RI "\fBuint8_t\fP \fBFlag\fP = \fBFALSE\fP"
+.br
+.RI "The flag which determine if the interrupt is fired or not\&. "
+.ti -1c
+.RI "\fBLedMode\fP \fBFirstState\fP"
+.br
+.RI "The variable shows which LED was illuminated when the interrupt was fired\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBApp_state\fP"
+.br
+.RI "holds the status of the running application "
+.in -1c
+.SH "Detailed Description"
+.PP 
+the application main function and App_start function 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Moataz 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+September 2022 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define F_CPU   1000000U"
+
+.PP
+Clock frequency\&. 
+.SH "Function Documentation"
+.PP 
+.SS "void AppStart ()"
+
+.PP
+AppStart determine which mode the program is on and in return will detemine the illumination of the car and pedestrian LEDs accordingly\&. 
+.SS "\fBStatus\fP Blink_Both_YELLOW ()"
+
+.PP
+blink the both yellow LEDs for 5 seconds calls LED toggle passing the car yellow LED parameters then delay 1 ms in a loop of 5 iterations 
+.PP
+\fBReturns\fP
+.RS 4
+Status returns not ok if failure occurs during toggling or delay, otherwise return Ok 
+.RE
+.PP
+
+.SS "\fBStatus\fP Blink_CAR_YELLOW ()"
+
+.PP
+blink the car yellow LED for 5 seconds calls LED toggle passing the car yellow LED parameters then delay 1 ms in a loop of 5 iterations 
+.PP
+\fBReturns\fP
+.RS 4
+Status returns not ok if failure occurs during toggling or delay, otherwise return Ok 
+.RE
+.PP
+
+.SS "ISR (\fBEXT_INT_0\fP)"
+
+.PP
+ISR will shift the state from Normal to Pedestrian Upon button press\&. the ISR will be fired with the button is pressed 
+.SS "\fBStatus\fP LEDS_OFF ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+Status 
+.RE
+.PP
+
+.SS "int main (void)"
+
+.PP
+Program main function\&. Initializers the needed drivers for the application calls the Appstart to start the application 
+.PP
+\fBSee also\fP
+.RS 4
+\fBLED_Init()\fP \fBBUTTON_Init()\fP \fBdelay_init_0()\fP \fBAppStart()\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 0 if the programs has no errors, 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "\fBStatus\fP App_state"
+
+.PP
+holds the status of the running application 
+.SS "\fBLedMode\fP current_carLed_Mode = \fBGreen\fP"
+
+.PP
+The variable holds the currently illuminated LED\&. 
+.SS "\fBMode\fP currentMode = \fBNormal\fP"
+
+.PP
+The state of the program\&. 
+.SS "\fBLedMode\fP FirstState"
+
+.PP
+The variable shows which LED was illuminated when the interrupt was fired\&. 
+.SS "\fBuint8_t\fP Flag = \fBFALSE\fP"
+
+.PP
+The flag which determine if the interrupt is fired or not\&. 
+.SS "\fBLedMode\fP previous_carLed_Mode = \fBGreen\fP"
+
+.PP
+The variable holds the previously illuminated LED\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Trafic Light LED from the source code\&.

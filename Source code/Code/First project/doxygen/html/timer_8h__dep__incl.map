@@ -1,0 +1,7 @@
+<map id="MCAL/Timer/timer.h" name="MCAL/Timer/timer.h">
+<area shape="rect" id="node1" title=" " alt="" coords="185,5,324,31"/>
+<area shape="rect" id="node2" href="$timer_8c.html" title=" " alt="" coords="5,79,144,104"/>
+<area shape="rect" id="node3" href="$delay__ms_8h.html" title=" " alt="" coords="169,79,341,104"/>
+<area shape="rect" id="node5" href="$main_8c.html" title="the application main function and App_start function" alt="" coords="348,152,409,177"/>
+<area shape="rect" id="node4" href="$delay__ms_8c.html" title="Implements Delays to be used in the program using the Timer driver." alt="" coords="151,152,323,177"/>
+</map>

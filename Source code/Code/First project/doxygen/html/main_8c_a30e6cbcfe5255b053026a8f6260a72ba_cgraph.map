@@ -1,0 +1,8 @@
+<map id="Blink_CAR_YELLOW" name="Blink_CAR_YELLOW">
+<area shape="rect" id="node1" title="blink the car yellow LED for 5 seconds" alt="" coords="5,80,152,105"/>
+<area shape="rect" id="node2" href="$delay__ms_8c.html#a00cf3b3a6fabb99120a35495d5305df5" title="perform a delay with the required time passed in delay_ms" alt="" coords="200,55,292,80"/>
+<area shape="rect" id="node5" href="$led_8c.html#ac23b9cb9b3bad2c709933be0ddf23da0" title="Toggle the status of the LED." alt="" coords="201,104,291,129"/>
+<area shape="rect" id="node3" href="$timer_8c.html#aaed1e3c1198d785e3d5d0716e0aa9022" title="Start the timer 0." alt="" coords="340,5,431,31"/>
+<area shape="rect" id="node4" href="$timer_8c.html#a9180e184d96bacc8baa49a7a2ee1bfb3" title="stop the timer 0" alt="" coords="340,55,431,80"/>
+<area shape="rect" id="node6" href="$dio_8c.html#a66bc0fe366e60f31548ee264f63c0df1" title="Toggle the value of the output pin." alt="" coords="341,104,430,129"/>
+</map>

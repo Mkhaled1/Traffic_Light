@@ -1,0 +1,215 @@
+.TH "Registers.h" 3 "Tue Sep 13 2022" "Trafic Light LED" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Registers.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Types\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPORTA\fP   (*(volatile \fBuint8_t\fP*) 0x3B)"
+.br
+.ti -1c
+.RI "#define \fBDDRA\fP   (*(volatile \fBuint8_t\fP*)0x3A)"
+.br
+.ti -1c
+.RI "#define \fBPINA\fP   (*(volatile \fBuint8_t\fP*) 0x39)"
+.br
+.ti -1c
+.RI "#define \fBPORTB\fP   (*(volatile \fBuint8_t\fP*) 0x38)"
+.br
+.ti -1c
+.RI "#define \fBDDRB\fP   (*(volatile \fBuint8_t\fP*) 0x37)"
+.br
+.ti -1c
+.RI "#define \fBPINB\fP   (*(volatile \fBuint8_t\fP*) 0x36)"
+.br
+.ti -1c
+.RI "#define \fBPORTC\fP   (*(volatile \fBuint8_t\fP*) 0x35)"
+.br
+.ti -1c
+.RI "#define \fBDDRC\fP   (*(volatile \fBuint8_t\fP*)0x34)"
+.br
+.ti -1c
+.RI "#define \fBPINC\fP   (*(volatile \fBuint8_t\fP*) 0x33)"
+.br
+.ti -1c
+.RI "#define \fBPORTD\fP   (*(volatile \fBuint8_t\fP*) 0x32)"
+.br
+.ti -1c
+.RI "#define \fBDDRD\fP   (*(volatile \fBuint8_t\fP*) 0x31)"
+.br
+.ti -1c
+.RI "#define \fBPIND\fP   (*(volatile \fBuint8_t\fP*) 0x30)"
+.br
+.ti -1c
+.RI "#define \fBTCCR0\fP   (*(volatile \fBuint8_t\fP*) 0x53)"
+.br
+.ti -1c
+.RI "#define \fBTCNT0\fP   (*(volatile \fBuint8_t\fP*) 0x52)"
+.br
+.ti -1c
+.RI "#define \fBOCR0\fP   (*(volatile \fBuint8_t\fP*) 0x5C)"
+.br
+.ti -1c
+.RI "#define \fBTCCR2\fP   (*(volatile \fBuint8_t\fP*) 0x45)"
+.br
+.ti -1c
+.RI "#define \fBTCNT2\fP   (*(volatile \fBuint8_t\fP*) 0x44)"
+.br
+.ti -1c
+.RI "#define \fBOCR2\fP   (*(volatile \fBuint8_t\fP*) 0x43)"
+.br
+.ti -1c
+.RI "#define \fBTIFR\fP   (*(volatile \fBuint8_t\fP*) 0x58)"
+.br
+.ti -1c
+.RI "#define \fBSREG\fP   (*(volatile \fBuint8_t\fP*) 0x5F)"
+.br
+.ti -1c
+.RI "#define \fBMCUCR\fP   (*(volatile \fBuint8_t\fP*) 0x55)"
+.br
+.ti -1c
+.RI "#define \fBMCUCSR\fP   (*(volatile \fBuint8_t\fP*) 0x54)"
+.br
+.ti -1c
+.RI "#define \fBGICR\fP   (*(volatile \fBuint8_t\fP*) 0x5B)"
+.br
+.ti -1c
+.RI "#define \fBGIFR\fP   (*(volatile \fBuint8_t\fP*) 0x5A)"
+.br
+.ti -1c
+.RI "#define \fBISC00\fP   0"
+.br
+.ti -1c
+.RI "#define \fBISC01\fP   1"
+.br
+.ti -1c
+.RI "#define \fBINT0\fP   6"
+.br
+.ti -1c
+.RI "#define \fBPIN0\fP   0"
+.br
+.ti -1c
+.RI "#define \fBPIN1\fP   1"
+.br
+.ti -1c
+.RI "#define \fBPIN2\fP   2"
+.br
+.ti -1c
+.RI "#define \fBPIN3\fP   3"
+.br
+.ti -1c
+.RI "#define \fBPIN4\fP   4"
+.br
+.ti -1c
+.RI "#define \fBPIN5\fP   5"
+.br
+.ti -1c
+.RI "#define \fBPIN6\fP   6"
+.br
+.ti -1c
+.RI "#define \fBPIN7\fP   7"
+.br
+.ti -1c
+.RI "#define \fBbitset\fP(byte,  nbit)   ((byte) |=  (1<<(nbit)))"
+.br
+.ti -1c
+.RI "#define \fBbitclear\fP(byte,  nbit)   ((byte) &= ~(1<<(nbit)))"
+.br
+.ti -1c
+.RI "#define \fBbitflip\fP(byte,  nbit)   ((byte) ^=  (1<<(nbit)))"
+.br
+.ti -1c
+.RI "#define \fBbitRead\fP(byte,  nbit)   (((byte) &   (1<<(nbit))) >> nbit)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define bitclear(byte, nbit)   ((byte) &= ~(1<<(nbit)))"
+
+.SS "#define bitflip(byte, nbit)   ((byte) ^=  (1<<(nbit)))"
+
+.SS "#define bitRead(byte, nbit)   (((byte) &   (1<<(nbit))) >> nbit)"
+
+.SS "#define bitset(byte, nbit)   ((byte) |=  (1<<(nbit)))"
+
+.SS "#define DDRA   (*(volatile \fBuint8_t\fP*)0x3A)"
+
+.SS "#define DDRB   (*(volatile \fBuint8_t\fP*) 0x37)"
+
+.SS "#define DDRC   (*(volatile \fBuint8_t\fP*)0x34)"
+
+.SS "#define DDRD   (*(volatile \fBuint8_t\fP*) 0x31)"
+
+.SS "#define GICR   (*(volatile \fBuint8_t\fP*) 0x5B)"
+
+.SS "#define GIFR   (*(volatile \fBuint8_t\fP*) 0x5A)"
+
+.SS "#define INT0   6"
+
+.SS "#define ISC00   0"
+
+.SS "#define ISC01   1"
+
+.SS "#define MCUCR   (*(volatile \fBuint8_t\fP*) 0x55)"
+
+.SS "#define MCUCSR   (*(volatile \fBuint8_t\fP*) 0x54)"
+
+.SS "#define OCR0   (*(volatile \fBuint8_t\fP*) 0x5C)"
+
+.SS "#define OCR2   (*(volatile \fBuint8_t\fP*) 0x43)"
+
+.SS "#define PIN0   0"
+
+.SS "#define PIN1   1"
+
+.SS "#define PIN2   2"
+
+.SS "#define PIN3   3"
+
+.SS "#define PIN4   4"
+
+.SS "#define PIN5   5"
+
+.SS "#define PIN6   6"
+
+.SS "#define PIN7   7"
+
+.SS "#define PINA   (*(volatile \fBuint8_t\fP*) 0x39)"
+
+.SS "#define PINB   (*(volatile \fBuint8_t\fP*) 0x36)"
+
+.SS "#define PINC   (*(volatile \fBuint8_t\fP*) 0x33)"
+
+.SS "#define PIND   (*(volatile \fBuint8_t\fP*) 0x30)"
+
+.SS "#define PORTA   (*(volatile \fBuint8_t\fP*) 0x3B)"
+
+.SS "#define PORTB   (*(volatile \fBuint8_t\fP*) 0x38)"
+
+.SS "#define PORTC   (*(volatile \fBuint8_t\fP*) 0x35)"
+
+.SS "#define PORTD   (*(volatile \fBuint8_t\fP*) 0x32)"
+
+.SS "#define SREG   (*(volatile \fBuint8_t\fP*) 0x5F)"
+
+.SS "#define TCCR0   (*(volatile \fBuint8_t\fP*) 0x53)"
+
+.SS "#define TCCR2   (*(volatile \fBuint8_t\fP*) 0x45)"
+
+.SS "#define TCNT0   (*(volatile \fBuint8_t\fP*) 0x52)"
+
+.SS "#define TCNT2   (*(volatile \fBuint8_t\fP*) 0x44)"
+
+.SS "#define TIFR   (*(volatile \fBuint8_t\fP*) 0x58)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Trafic Light LED from the source code\&.

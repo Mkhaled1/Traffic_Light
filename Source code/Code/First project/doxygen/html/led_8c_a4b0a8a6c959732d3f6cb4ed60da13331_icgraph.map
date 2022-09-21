@@ -1,0 +1,6 @@
+<map id="LED_Off" name="LED_Off">
+<area shape="rect" id="node1" title="Turns LED Off." alt="" coords="363,5,433,31"/>
+<area shape="rect" id="node2" href="$main_8c.html#aae2284072a3a912224316e1a904e3487" title="AppStart determine which mode the program is on and in return will detemine the illumination of the c..." alt="" coords="104,5,177,31"/>
+<area shape="rect" id="node4" href="$main_8c.html#af2cc73ed630655a8bed565df8781be08" title=" " alt="" coords="225,31,315,56"/>
+<area shape="rect" id="node3" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Program main function." alt="" coords="5,5,56,31"/>
+</map>

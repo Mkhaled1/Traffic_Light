@@ -1,0 +1,693 @@
+\begin{theindex}
+
+  \item {app.h}
+    \subitem {AppStart}, \hyperpage{12}
+    \subitem {Blink\_Both\_YELLOW}, \hyperpage{12}
+    \subitem {Blink\_CAR\_YELLOW}, \hyperpage{13}
+    \subitem {Green}, \hyperpage{11}
+    \subitem {LedMode}, \hyperpage{11}
+    \subitem {LEDS\_OFF}, \hyperpage{14}
+    \subitem {Mode}, \hyperpage{11}
+    \subitem {NON}, \hyperpage{11}
+    \subitem {Normal}, \hyperpage{11}
+    \subitem {ON\_DELAY}, \hyperpage{10}
+    \subitem {Pedestrian}, \hyperpage{11}
+    \subitem {Red}, \hyperpage{11}
+    \subitem {TOGGLE\_DELAY}, \hyperpage{10}
+    \subitem {Yellow}, \hyperpage{11}
+  \item {App/app.h}, \hyperpage{9}, \hyperpage{15}
+  \item {App\_state}
+    \subitem {main.c}, \hyperpage{42}
+  \item {AppStart}
+    \subitem {app.h}, \hyperpage{12}
+    \subitem {main.c}, \hyperpage{37}
+
+  \indexspace
+
+  \item {bitclear}
+    \subitem {Registers.h}, \hyperpage{69}
+  \item {bitflip}
+    \subitem {Registers.h}, \hyperpage{69}
+  \item {bitRead}
+    \subitem {Registers.h}, \hyperpage{69}
+  \item {bitset}
+    \subitem {Registers.h}, \hyperpage{69}
+  \item {Blink\_Both\_YELLOW}
+    \subitem {app.h}, \hyperpage{12}
+    \subitem {main.c}, \hyperpage{38}
+  \item {Blink\_CAR\_YELLOW}
+    \subitem {app.h}, \hyperpage{13}
+    \subitem {main.c}, \hyperpage{39}
+  \item {button.c}
+    \subitem {BUTTON\_Init}, \hyperpage{17}
+    \subitem {BUTTON\_read}, \hyperpage{18}
+  \item {button.h}
+    \subitem {BUTTON\_Init}, \hyperpage{20}
+    \subitem {BUTTON\_read}, \hyperpage{21}
+    \subitem {PEDESTRIAN\_BUTTON}, \hyperpage{20}
+  \item {BUTTON\_Init}
+    \subitem {button.c}, \hyperpage{17}
+    \subitem {button.h}, \hyperpage{20}
+  \item {BUTTON\_read}
+    \subitem {button.c}, \hyperpage{18}
+    \subitem {button.h}, \hyperpage{21}
+
+  \indexspace
+
+  \item {CAR\_LED\_GREEN}
+    \subitem {led.h}, \hyperpage{30}
+  \item {CAR\_LED\_RED}
+    \subitem {led.h}, \hyperpage{30}
+  \item {CAR\_LED\_YELLOW}
+    \subitem {led.h}, \hyperpage{30}
+  \item {Clear}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {cli}
+    \subitem {Interrupts.h}, \hyperpage{57}
+  \item {clk\_source\_T0}
+    \subitem {timer.h}, \hyperpage{63, 64}
+  \item {COM\_Mode}
+    \subitem {timer.h}, \hyperpage{63, 64}
+  \item {CTC}
+    \subitem {timer.h}, \hyperpage{65}
+  \item {current\_carLed\_Mode}
+    \subitem {main.c}, \hyperpage{42}
+  \item {currentMode}
+    \subitem {main.c}, \hyperpage{42}
+
+  \indexspace
+
+  \item {DDRA}
+    \subitem {Registers.h}, \hyperpage{70}
+  \item {DDRB}
+    \subitem {Registers.h}, \hyperpage{70}
+  \item {DDRC}
+    \subitem {Registers.h}, \hyperpage{70}
+  \item {DDRD}
+    \subitem {Registers.h}, \hyperpage{70}
+  \item {delay\_init\_0}
+    \subitem {delay\_ms.c}, \hyperpage{77}
+    \subitem {delay\_ms.h}, \hyperpage{79}
+  \item {delay\_ms.c}
+    \subitem {delay\_init\_0}, \hyperpage{77}
+    \subitem {delay\_ms\_0}, \hyperpage{77}
+  \item {delay\_ms.h}
+    \subitem {delay\_init\_0}, \hyperpage{79}
+    \subitem {delay\_ms\_0}, \hyperpage{80}
+    \subitem {Stop\_delay}, \hyperpage{82}
+  \item {delay\_ms\_0}
+    \subitem {delay\_ms.c}, \hyperpage{77}
+    \subitem {delay\_ms.h}, \hyperpage{80}
+  \item {dio.c}
+    \subitem {DIO\_init}, \hyperpage{44}
+    \subitem {DIO\_Read}, \hyperpage{45}
+    \subitem {DIO\_Toggle}, \hyperpage{46}
+    \subitem {DIO\_Write}, \hyperpage{47}
+  \item {dio.h}
+    \subitem {DIO\_init}, \hyperpage{51}
+    \subitem {DIO\_Read}, \hyperpage{52}
+    \subitem {DIO\_Toggle}, \hyperpage{53}
+    \subitem {DIO\_Write}, \hyperpage{54}
+    \subitem {HIGH}, \hyperpage{50}
+    \subitem {IN}, \hyperpage{50}
+    \subitem {LOW}, \hyperpage{50}
+    \subitem {OUT}, \hyperpage{50}
+    \subitem {Port\_A}, \hyperpage{50}
+    \subitem {Port\_B}, \hyperpage{50}
+    \subitem {Port\_C}, \hyperpage{51}
+    \subitem {Port\_D}, \hyperpage{51}
+  \item {DIO\_init}
+    \subitem {dio.c}, \hyperpage{44}
+    \subitem {dio.h}, \hyperpage{51}
+  \item {DIO\_Read}
+    \subitem {dio.c}, \hyperpage{45}
+    \subitem {dio.h}, \hyperpage{52}
+  \item {DIO\_Toggle}
+    \subitem {dio.c}, \hyperpage{46}
+    \subitem {dio.h}, \hyperpage{53}
+  \item {DIO\_Write}
+    \subitem {dio.c}, \hyperpage{47}
+    \subitem {dio.h}, \hyperpage{54}
+  \item {Doc\_pages/System Design.md}, \hyperpage{15}
+
+  \indexspace
+
+  \item {ECUL/Button Driver/button.c}, \hyperpage{15}
+  \item {ECUL/Button Driver/button.h}, \hyperpage{18}, \hyperpage{22}
+  \item {ECUL/LED Driver/led.c}, \hyperpage{23}
+  \item {ECUL/LED Driver/led.h}, \hyperpage{28}, \hyperpage{35}
+  \item {EXT\_INT\_0}
+    \subitem {Interrupts.h}, \hyperpage{57}
+  \item {EXT\_INT\_1}
+    \subitem {Interrupts.h}, \hyperpage{57}
+  \item {EXT\_INT\_2}
+    \subitem {Interrupts.h}, \hyperpage{57}
+
+  \indexspace
+
+  \item {F\_CPU}
+    \subitem {main.c}, \hyperpage{37}
+  \item {FALSE}
+    \subitem {Types.h}, \hyperpage{113}
+  \item {Fast\_PWM}
+    \subitem {timer.h}, \hyperpage{65}
+  \item {FirstState}
+    \subitem {main.c}, \hyperpage{42}
+  \item {Flag}
+    \subitem {main.c}, \hyperpage{43}
+
+  \indexspace
+
+  \item {GICR}
+    \subitem {Registers.h}, \hyperpage{70}
+  \item {GIFR}
+    \subitem {Registers.h}, \hyperpage{70}
+  \item {Green}
+    \subitem {app.h}, \hyperpage{11}
+
+  \indexspace
+
+  \item {HIGH}
+    \subitem {dio.h}, \hyperpage{50}
+
+  \indexspace
+
+  \item {IN}
+    \subitem {dio.h}, \hyperpage{50}
+  \item {INT0}
+    \subitem {Registers.h}, \hyperpage{70}
+  \item {Interrupts.h}
+    \subitem {cli}, \hyperpage{57}
+    \subitem {EXT\_INT\_0}, \hyperpage{57}
+    \subitem {EXT\_INT\_1}, \hyperpage{57}
+    \subitem {EXT\_INT\_2}, \hyperpage{57}
+    \subitem {ISR}, \hyperpage{57}
+    \subitem {sei}, \hyperpage{58}
+    \subitem {TIMER0\_OVF}, \hyperpage{58}
+  \item {ISC00}
+    \subitem {Registers.h}, \hyperpage{71}
+  \item {ISC01}
+    \subitem {Registers.h}, \hyperpage{71}
+  \item {ISR}
+    \subitem {Interrupts.h}, \hyperpage{57}
+    \subitem {main.c}, \hyperpage{40}
+
+  \indexspace
+
+  \item {led.c}
+    \subitem {LED\_Init}, \hyperpage{24}
+    \subitem {LED\_Off}, \hyperpage{25}
+    \subitem {LED\_On}, \hyperpage{26}
+    \subitem {LED\_toggle}, \hyperpage{27}
+  \item {led.h}
+    \subitem {CAR\_LED\_GREEN}, \hyperpage{30}
+    \subitem {CAR\_LED\_RED}, \hyperpage{30}
+    \subitem {CAR\_LED\_YELLOW}, \hyperpage{30}
+    \subitem {LED\_Init}, \hyperpage{31}
+    \subitem {LED\_Off}, \hyperpage{32}
+    \subitem {LED\_On}, \hyperpage{33}
+    \subitem {LED\_toggle}, \hyperpage{34}
+    \subitem {PEDES\_LED\_GREEN}, \hyperpage{31}
+    \subitem {PEDES\_LED\_RED}, \hyperpage{31}
+    \subitem {PEDES\_LED\_YELLOW}, \hyperpage{31}
+  \item {LED\_Init}
+    \subitem {led.c}, \hyperpage{24}
+    \subitem {led.h}, \hyperpage{31}
+  \item {LED\_Off}
+    \subitem {led.c}, \hyperpage{25}
+    \subitem {led.h}, \hyperpage{32}
+  \item {LED\_On}
+    \subitem {led.c}, \hyperpage{26}
+    \subitem {led.h}, \hyperpage{33}
+  \item {LED\_toggle}
+    \subitem {led.c}, \hyperpage{27}
+    \subitem {led.h}, \hyperpage{34}
+  \item {LedMode}
+    \subitem {app.h}, \hyperpage{11}
+  \item {LEDS\_OFF}
+    \subitem {app.h}, \hyperpage{14}
+    \subitem {main.c}, \hyperpage{40}
+  \item {LOW}
+    \subitem {dio.h}, \hyperpage{50}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.c}, \hyperpage{41}
+  \item {main.c}, \hyperpage{35}
+    \subitem {App\_state}, \hyperpage{42}
+    \subitem {AppStart}, \hyperpage{37}
+    \subitem {Blink\_Both\_YELLOW}, \hyperpage{38}
+    \subitem {Blink\_CAR\_YELLOW}, \hyperpage{39}
+    \subitem {current\_carLed\_Mode}, \hyperpage{42}
+    \subitem {currentMode}, \hyperpage{42}
+    \subitem {F\_CPU}, \hyperpage{37}
+    \subitem {FirstState}, \hyperpage{42}
+    \subitem {Flag}, \hyperpage{43}
+    \subitem {ISR}, \hyperpage{40}
+    \subitem {LEDS\_OFF}, \hyperpage{40}
+    \subitem {main}, \hyperpage{41}
+    \subitem {previous\_carLed\_Mode}, \hyperpage{43}
+  \item {MCAL/DIO Driver/dio.c}, \hyperpage{43}
+  \item {MCAL/DIO Driver/dio.h}, \hyperpage{48}, \hyperpage{55}
+  \item {MCAL/Interrupts.h}, \hyperpage{56}, \hyperpage{58}
+  \item {MCAL/Timer/timer.c}, \hyperpage{59}
+  \item {MCAL/Timer/timer.h}, \hyperpage{62}, \hyperpage{67}
+  \item {MCUCR}
+    \subitem {Registers.h}, \hyperpage{71}
+  \item {MCUCSR}
+    \subitem {Registers.h}, \hyperpage{71}
+  \item {Mode}
+    \subitem {app.h}, \hyperpage{11}
+
+  \indexspace
+
+  \item {NO\_OUTPUT}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {NON}
+    \subitem {app.h}, \hyperpage{11}
+  \item {Normal}
+    \subitem {app.h}, \hyperpage{11}
+  \item {Not\_ok}
+    \subitem {Types.h}, \hyperpage{115}
+  \item {NULL}
+    \subitem {Types.h}, \hyperpage{113}
+
+  \indexspace
+
+  \item {OCR0}
+    \subitem {Registers.h}, \hyperpage{71}
+  \item {OCR2}
+    \subitem {Registers.h}, \hyperpage{71}
+  \item {Ok}
+    \subitem {Types.h}, \hyperpage{115}
+  \item {ON\_DELAY}
+    \subitem {app.h}, \hyperpage{10}
+  \item {OUT}
+    \subitem {dio.h}, \hyperpage{50}
+
+  \indexspace
+
+  \item {PEDES\_LED\_GREEN}
+    \subitem {led.h}, \hyperpage{31}
+  \item {PEDES\_LED\_RED}
+    \subitem {led.h}, \hyperpage{31}
+  \item {PEDES\_LED\_YELLOW}
+    \subitem {led.h}, \hyperpage{31}
+  \item {Pedestrian}
+    \subitem {app.h}, \hyperpage{11}
+  \item {PEDESTRIAN\_BUTTON}
+    \subitem {button.h}, \hyperpage{20}
+  \item {Phase\_Correct}
+    \subitem {timer.h}, \hyperpage{65}
+  \item {PIN0}
+    \subitem {Registers.h}, \hyperpage{71}
+  \item {PIN1}
+    \subitem {Registers.h}, \hyperpage{71}
+  \item {PIN2}
+    \subitem {Registers.h}, \hyperpage{72}
+  \item {PIN3}
+    \subitem {Registers.h}, \hyperpage{72}
+  \item {PIN4}
+    \subitem {Registers.h}, \hyperpage{72}
+  \item {PIN5}
+    \subitem {Registers.h}, \hyperpage{72}
+  \item {PIN6}
+    \subitem {Registers.h}, \hyperpage{72}
+  \item {PIN7}
+    \subitem {Registers.h}, \hyperpage{72}
+  \item {PINA}
+    \subitem {Registers.h}, \hyperpage{72}
+  \item {PINB}
+    \subitem {Registers.h}, \hyperpage{72}
+  \item {PINC}
+    \subitem {Registers.h}, \hyperpage{73}
+  \item {PIND}
+    \subitem {Registers.h}, \hyperpage{73}
+  \item {Port\_A}
+    \subitem {dio.h}, \hyperpage{50}
+  \item {Port\_B}
+    \subitem {dio.h}, \hyperpage{50}
+  \item {Port\_C}
+    \subitem {dio.h}, \hyperpage{51}
+  \item {Port\_D}
+    \subitem {dio.h}, \hyperpage{51}
+  \item {PORT\_E}
+    \subitem {Test\_Dio.h}, \hyperpage{98}
+  \item {PORTA}
+    \subitem {Registers.h}, \hyperpage{73}
+  \item {PORTB}
+    \subitem {Registers.h}, \hyperpage{73}
+  \item {PORTC}
+    \subitem {Registers.h}, \hyperpage{73}
+  \item {PORTD}
+    \subitem {Registers.h}, \hyperpage{73}
+  \item {previous\_carLed\_Mode}
+    \subitem {main.c}, \hyperpage{43}
+
+  \indexspace
+
+  \item {Red}
+    \subitem {app.h}, \hyperpage{11}
+  \item {Registers.h}, \hyperpage{68}
+    \subitem {bitclear}, \hyperpage{69}
+    \subitem {bitflip}, \hyperpage{69}
+    \subitem {bitRead}, \hyperpage{69}
+    \subitem {bitset}, \hyperpage{69}
+    \subitem {DDRA}, \hyperpage{70}
+    \subitem {DDRB}, \hyperpage{70}
+    \subitem {DDRC}, \hyperpage{70}
+    \subitem {DDRD}, \hyperpage{70}
+    \subitem {GICR}, \hyperpage{70}
+    \subitem {GIFR}, \hyperpage{70}
+    \subitem {INT0}, \hyperpage{70}
+    \subitem {ISC00}, \hyperpage{71}
+    \subitem {ISC01}, \hyperpage{71}
+    \subitem {MCUCR}, \hyperpage{71}
+    \subitem {MCUCSR}, \hyperpage{71}
+    \subitem {OCR0}, \hyperpage{71}
+    \subitem {OCR2}, \hyperpage{71}
+    \subitem {PIN0}, \hyperpage{71}
+    \subitem {PIN1}, \hyperpage{71}
+    \subitem {PIN2}, \hyperpage{72}
+    \subitem {PIN3}, \hyperpage{72}
+    \subitem {PIN4}, \hyperpage{72}
+    \subitem {PIN5}, \hyperpage{72}
+    \subitem {PIN6}, \hyperpage{72}
+    \subitem {PIN7}, \hyperpage{72}
+    \subitem {PINA}, \hyperpage{72}
+    \subitem {PINB}, \hyperpage{72}
+    \subitem {PINC}, \hyperpage{73}
+    \subitem {PIND}, \hyperpage{73}
+    \subitem {PORTA}, \hyperpage{73}
+    \subitem {PORTB}, \hyperpage{73}
+    \subitem {PORTC}, \hyperpage{73}
+    \subitem {PORTD}, \hyperpage{73}
+    \subitem {SREG}, \hyperpage{73}
+    \subitem {TCCR0}, \hyperpage{73}
+    \subitem {TCCR2}, \hyperpage{74}
+    \subitem {TCNT0}, \hyperpage{74}
+    \subitem {TCNT2}, \hyperpage{74}
+    \subitem {TIFR}, \hyperpage{74}
+
+  \indexspace
+
+  \item {sei}
+    \subitem {Interrupts.h}, \hyperpage{58}
+  \item {Service/Delay/delay\_ms.c}, \hyperpage{75}
+  \item {Service/Delay/delay\_ms.h}, \hyperpage{78}, \hyperpage{82}
+  \item {Set}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {SREG}
+    \subitem {Registers.h}, \hyperpage{73}
+  \item {Status}
+    \subitem {Types.h}, \hyperpage{113, 114}
+  \item {Stop\_delay}
+    \subitem {delay\_ms.h}, \hyperpage{82}
+
+  \indexspace
+
+  \item {T0\_Ext\_falling}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {T0\_Ext\_Rising}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {T0\_No\_Clk\_Source}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {T0\_No\_prescalor}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {T0\_Precalor\_1024}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {T0\_Precalor\_256}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {T0\_Precalor\_64}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {T0\_Precalor\_8}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {TCCR0}
+    \subitem {Registers.h}, \hyperpage{73}
+  \item {TCCR2}
+    \subitem {Registers.h}, \hyperpage{74}
+  \item {TCNT0}
+    \subitem {Registers.h}, \hyperpage{74}
+  \item {TCNT2}
+    \subitem {Registers.h}, \hyperpage{74}
+  \item {Test\_Dio.c}, \hyperpage{83}
+    \subitem {TRAFF\_DIO\_001}, \hyperpage{85}
+    \subitem {TRAFF\_DIO\_002}, \hyperpage{85}
+    \subitem {TRAFF\_DIO\_003}, \hyperpage{85}
+    \subitem {TRAFF\_DIO\_004}, \hyperpage{85}
+    \subitem {TRAFF\_DIO\_005}, \hyperpage{86}
+    \subitem {TRAFF\_DIO\_006}, \hyperpage{86}
+    \subitem {TRAFF\_DIO\_007}, \hyperpage{86}
+    \subitem {TRAFF\_DIO\_008}, \hyperpage{87}
+    \subitem {TRAFF\_DIO\_009}, \hyperpage{87}
+    \subitem {TRAFF\_DIO\_010}, \hyperpage{87}
+    \subitem {TRAFF\_DIO\_011}, \hyperpage{88}
+    \subitem {TRAFF\_DIO\_012}, \hyperpage{88}
+    \subitem {TRAFF\_DIO\_013}, \hyperpage{88}
+    \subitem {TRAFF\_DIO\_014}, \hyperpage{89}
+    \subitem {TRAFF\_DIO\_015}, \hyperpage{89}
+    \subitem {TRAFF\_DIO\_016}, \hyperpage{90}
+    \subitem {TRAFF\_DIO\_017}, \hyperpage{90}
+    \subitem {TRAFF\_DIO\_018}, \hyperpage{90}
+    \subitem {TRAFF\_DIO\_019}, \hyperpage{91}
+    \subitem {TRAFF\_DIO\_020}, \hyperpage{91}
+    \subitem {TRAFF\_DIO\_021}, \hyperpage{91}
+    \subitem {TRAFF\_DIO\_022}, \hyperpage{92}
+    \subitem {TRAFF\_DIO\_023}, \hyperpage{92}
+    \subitem {TRAFF\_DIO\_024}, \hyperpage{93}
+    \subitem {TRAFF\_DIO\_025}, \hyperpage{93}
+    \subitem {TRAFF\_DIO\_026}, \hyperpage{93}
+    \subitem {TRAFF\_DIO\_027}, \hyperpage{94}
+    \subitem {TRAFF\_DIO\_028}, \hyperpage{94}
+    \subitem {TRAFF\_DIO\_029}, \hyperpage{94}
+    \subitem {TRAFF\_DIO\_030}, \hyperpage{95}
+    \subitem {TRAFF\_DIO\_031}, \hyperpage{95}
+    \subitem {TRAFF\_DIO\_032}, \hyperpage{96}
+    \subitem {TRAFF\_DIO\_033}, \hyperpage{96}
+    \subitem {TRAFF\_DIO\_034}, \hyperpage{96}
+    \subitem {TRAFF\_DIO\_035}, \hyperpage{97}
+  \item {Test\_Dio.h}, \hyperpage{97}
+    \subitem {PORT\_E}, \hyperpage{98}
+    \subitem {TRAFF\_DIO\_001}, \hyperpage{99}
+    \subitem {TRAFF\_DIO\_002}, \hyperpage{99}
+    \subitem {TRAFF\_DIO\_003}, \hyperpage{99}
+    \subitem {TRAFF\_DIO\_004}, \hyperpage{99}
+    \subitem {TRAFF\_DIO\_005}, \hyperpage{100}
+    \subitem {TRAFF\_DIO\_006}, \hyperpage{100}
+    \subitem {TRAFF\_DIO\_007}, \hyperpage{100}
+    \subitem {TRAFF\_DIO\_008}, \hyperpage{101}
+    \subitem {TRAFF\_DIO\_009}, \hyperpage{101}
+    \subitem {TRAFF\_DIO\_010}, \hyperpage{101}
+    \subitem {TRAFF\_DIO\_011}, \hyperpage{102}
+    \subitem {TRAFF\_DIO\_012}, \hyperpage{102}
+    \subitem {TRAFF\_DIO\_013}, \hyperpage{102}
+    \subitem {TRAFF\_DIO\_014}, \hyperpage{103}
+    \subitem {TRAFF\_DIO\_015}, \hyperpage{103}
+    \subitem {TRAFF\_DIO\_016}, \hyperpage{104}
+    \subitem {TRAFF\_DIO\_017}, \hyperpage{104}
+    \subitem {TRAFF\_DIO\_018}, \hyperpage{104}
+    \subitem {TRAFF\_DIO\_019}, \hyperpage{105}
+    \subitem {TRAFF\_DIO\_020}, \hyperpage{105}
+    \subitem {TRAFF\_DIO\_021}, \hyperpage{105}
+    \subitem {TRAFF\_DIO\_022}, \hyperpage{106}
+    \subitem {TRAFF\_DIO\_023}, \hyperpage{106}
+    \subitem {TRAFF\_DIO\_024}, \hyperpage{107}
+    \subitem {TRAFF\_DIO\_025}, \hyperpage{107}
+    \subitem {TRAFF\_DIO\_026}, \hyperpage{107}
+    \subitem {TRAFF\_DIO\_027}, \hyperpage{108}
+    \subitem {TRAFF\_DIO\_028}, \hyperpage{108}
+    \subitem {TRAFF\_DIO\_029}, \hyperpage{108}
+    \subitem {TRAFF\_DIO\_030}, \hyperpage{109}
+    \subitem {TRAFF\_DIO\_031}, \hyperpage{109}
+    \subitem {TRAFF\_DIO\_032}, \hyperpage{110}
+    \subitem {TRAFF\_DIO\_033}, \hyperpage{110}
+    \subitem {TRAFF\_DIO\_034}, \hyperpage{110}
+    \subitem {TRAFF\_DIO\_035}, \hyperpage{111}
+  \item {TIFR}
+    \subitem {Registers.h}, \hyperpage{74}
+  \item {timer.c}
+    \subitem {timer0\_Init}, \hyperpage{60}
+    \subitem {timer0\_start}, \hyperpage{60}
+    \subitem {timer0\_stop}, \hyperpage{61}
+  \item {timer.h}
+    \subitem {Clear}, \hyperpage{64}
+    \subitem {clk\_source\_T0}, \hyperpage{63, 64}
+    \subitem {COM\_Mode}, \hyperpage{63, 64}
+    \subitem {CTC}, \hyperpage{65}
+    \subitem {Fast\_PWM}, \hyperpage{65}
+    \subitem {NO\_OUTPUT}, \hyperpage{64}
+    \subitem {Phase\_Correct}, \hyperpage{65}
+    \subitem {Set}, \hyperpage{64}
+    \subitem {T0\_Ext\_falling}, \hyperpage{64}
+    \subitem {T0\_Ext\_Rising}, \hyperpage{64}
+    \subitem {T0\_No\_Clk\_Source}, \hyperpage{64}
+    \subitem {T0\_No\_prescalor}, \hyperpage{64}
+    \subitem {T0\_Precalor\_1024}, \hyperpage{64}
+    \subitem {T0\_Precalor\_256}, \hyperpage{64}
+    \subitem {T0\_Precalor\_64}, \hyperpage{64}
+    \subitem {T0\_Precalor\_8}, \hyperpage{64}
+    \subitem {timer0\_Init}, \hyperpage{65}
+    \subitem {timer0\_start}, \hyperpage{66}
+    \subitem {timer0\_stop}, \hyperpage{66}
+    \subitem {Timer\_Mode}, \hyperpage{64, 65}
+    \subitem {Timer\_Normal}, \hyperpage{65}
+    \subitem {Toggle}, \hyperpage{64}
+    \subitem {WGM00}, \hyperpage{63}
+    \subitem {WGM01}, \hyperpage{63}
+  \item {timer0\_Init}
+    \subitem {timer.c}, \hyperpage{60}
+    \subitem {timer.h}, \hyperpage{65}
+  \item {TIMER0\_OVF}
+    \subitem {Interrupts.h}, \hyperpage{58}
+  \item {timer0\_start}
+    \subitem {timer.c}, \hyperpage{60}
+    \subitem {timer.h}, \hyperpage{66}
+  \item {timer0\_stop}
+    \subitem {timer.c}, \hyperpage{61}
+    \subitem {timer.h}, \hyperpage{66}
+  \item {Timer\_Mode}
+    \subitem {timer.h}, \hyperpage{64, 65}
+  \item {Timer\_Normal}
+    \subitem {timer.h}, \hyperpage{65}
+  \item {Toggle}
+    \subitem {timer.h}, \hyperpage{64}
+  \item {TOGGLE\_DELAY}
+    \subitem {app.h}, \hyperpage{10}
+  \item {TRAFF\_DIO\_001}
+    \subitem {Test\_Dio.c}, \hyperpage{85}
+    \subitem {Test\_Dio.h}, \hyperpage{99}
+  \item {TRAFF\_DIO\_002}
+    \subitem {Test\_Dio.c}, \hyperpage{85}
+    \subitem {Test\_Dio.h}, \hyperpage{99}
+  \item {TRAFF\_DIO\_003}
+    \subitem {Test\_Dio.c}, \hyperpage{85}
+    \subitem {Test\_Dio.h}, \hyperpage{99}
+  \item {TRAFF\_DIO\_004}
+    \subitem {Test\_Dio.c}, \hyperpage{85}
+    \subitem {Test\_Dio.h}, \hyperpage{99}
+  \item {TRAFF\_DIO\_005}
+    \subitem {Test\_Dio.c}, \hyperpage{86}
+    \subitem {Test\_Dio.h}, \hyperpage{100}
+  \item {TRAFF\_DIO\_006}
+    \subitem {Test\_Dio.c}, \hyperpage{86}
+    \subitem {Test\_Dio.h}, \hyperpage{100}
+  \item {TRAFF\_DIO\_007}
+    \subitem {Test\_Dio.c}, \hyperpage{86}
+    \subitem {Test\_Dio.h}, \hyperpage{100}
+  \item {TRAFF\_DIO\_008}
+    \subitem {Test\_Dio.c}, \hyperpage{87}
+    \subitem {Test\_Dio.h}, \hyperpage{101}
+  \item {TRAFF\_DIO\_009}
+    \subitem {Test\_Dio.c}, \hyperpage{87}
+    \subitem {Test\_Dio.h}, \hyperpage{101}
+  \item {TRAFF\_DIO\_010}
+    \subitem {Test\_Dio.c}, \hyperpage{87}
+    \subitem {Test\_Dio.h}, \hyperpage{101}
+  \item {TRAFF\_DIO\_011}
+    \subitem {Test\_Dio.c}, \hyperpage{88}
+    \subitem {Test\_Dio.h}, \hyperpage{102}
+  \item {TRAFF\_DIO\_012}
+    \subitem {Test\_Dio.c}, \hyperpage{88}
+    \subitem {Test\_Dio.h}, \hyperpage{102}
+  \item {TRAFF\_DIO\_013}
+    \subitem {Test\_Dio.c}, \hyperpage{88}
+    \subitem {Test\_Dio.h}, \hyperpage{102}
+  \item {TRAFF\_DIO\_014}
+    \subitem {Test\_Dio.c}, \hyperpage{89}
+    \subitem {Test\_Dio.h}, \hyperpage{103}
+  \item {TRAFF\_DIO\_015}
+    \subitem {Test\_Dio.c}, \hyperpage{89}
+    \subitem {Test\_Dio.h}, \hyperpage{103}
+  \item {TRAFF\_DIO\_016}
+    \subitem {Test\_Dio.c}, \hyperpage{90}
+    \subitem {Test\_Dio.h}, \hyperpage{104}
+  \item {TRAFF\_DIO\_017}
+    \subitem {Test\_Dio.c}, \hyperpage{90}
+    \subitem {Test\_Dio.h}, \hyperpage{104}
+  \item {TRAFF\_DIO\_018}
+    \subitem {Test\_Dio.c}, \hyperpage{90}
+    \subitem {Test\_Dio.h}, \hyperpage{104}
+  \item {TRAFF\_DIO\_019}
+    \subitem {Test\_Dio.c}, \hyperpage{91}
+    \subitem {Test\_Dio.h}, \hyperpage{105}
+  \item {TRAFF\_DIO\_020}
+    \subitem {Test\_Dio.c}, \hyperpage{91}
+    \subitem {Test\_Dio.h}, \hyperpage{105}
+  \item {TRAFF\_DIO\_021}
+    \subitem {Test\_Dio.c}, \hyperpage{91}
+    \subitem {Test\_Dio.h}, \hyperpage{105}
+  \item {TRAFF\_DIO\_022}
+    \subitem {Test\_Dio.c}, \hyperpage{92}
+    \subitem {Test\_Dio.h}, \hyperpage{106}
+  \item {TRAFF\_DIO\_023}
+    \subitem {Test\_Dio.c}, \hyperpage{92}
+    \subitem {Test\_Dio.h}, \hyperpage{106}
+  \item {TRAFF\_DIO\_024}
+    \subitem {Test\_Dio.c}, \hyperpage{93}
+    \subitem {Test\_Dio.h}, \hyperpage{107}
+  \item {TRAFF\_DIO\_025}
+    \subitem {Test\_Dio.c}, \hyperpage{93}
+    \subitem {Test\_Dio.h}, \hyperpage{107}
+  \item {TRAFF\_DIO\_026}
+    \subitem {Test\_Dio.c}, \hyperpage{93}
+    \subitem {Test\_Dio.h}, \hyperpage{107}
+  \item {TRAFF\_DIO\_027}
+    \subitem {Test\_Dio.c}, \hyperpage{94}
+    \subitem {Test\_Dio.h}, \hyperpage{108}
+  \item {TRAFF\_DIO\_028}
+    \subitem {Test\_Dio.c}, \hyperpage{94}
+    \subitem {Test\_Dio.h}, \hyperpage{108}
+  \item {TRAFF\_DIO\_029}
+    \subitem {Test\_Dio.c}, \hyperpage{94}
+    \subitem {Test\_Dio.h}, \hyperpage{108}
+  \item {TRAFF\_DIO\_030}
+    \subitem {Test\_Dio.c}, \hyperpage{95}
+    \subitem {Test\_Dio.h}, \hyperpage{109}
+  \item {TRAFF\_DIO\_031}
+    \subitem {Test\_Dio.c}, \hyperpage{95}
+    \subitem {Test\_Dio.h}, \hyperpage{109}
+  \item {TRAFF\_DIO\_032}
+    \subitem {Test\_Dio.c}, \hyperpage{96}
+    \subitem {Test\_Dio.h}, \hyperpage{110}
+  \item {TRAFF\_DIO\_033}
+    \subitem {Test\_Dio.c}, \hyperpage{96}
+    \subitem {Test\_Dio.h}, \hyperpage{110}
+  \item {TRAFF\_DIO\_034}
+    \subitem {Test\_Dio.c}, \hyperpage{96}
+    \subitem {Test\_Dio.h}, \hyperpage{110}
+  \item {TRAFF\_DIO\_035}
+    \subitem {Test\_Dio.c}, \hyperpage{97}
+    \subitem {Test\_Dio.h}, \hyperpage{111}
+  \item {TRUE}
+    \subitem {Types.h}, \hyperpage{113}
+  \item {Types.h}, \hyperpage{112}
+    \subitem {FALSE}, \hyperpage{113}
+    \subitem {Not\_ok}, \hyperpage{115}
+    \subitem {NULL}, \hyperpage{113}
+    \subitem {Ok}, \hyperpage{115}
+    \subitem {Status}, \hyperpage{113, 114}
+    \subitem {TRUE}, \hyperpage{113}
+    \subitem {uint16\_t}, \hyperpage{113}
+    \subitem {uint8\_t}, \hyperpage{113}
+
+  \indexspace
+
+  \item {uint16\_t}
+    \subitem {Types.h}, \hyperpage{113}
+  \item {uint8\_t}
+    \subitem {Types.h}, \hyperpage{113}
+
+  \indexspace
+
+  \item {WGM00}
+    \subitem {timer.h}, \hyperpage{63}
+  \item {WGM01}
+    \subitem {timer.h}, \hyperpage{63}
+
+  \indexspace
+
+  \item {Yellow}
+    \subitem {app.h}, \hyperpage{11}
+
+\end{theindex}

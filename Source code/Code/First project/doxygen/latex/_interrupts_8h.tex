@@ -1,0 +1,98 @@
+\hypertarget{_interrupts_8h}{}\doxysection{MCAL/\+Interrupts.h File Reference}
+\label{_interrupts_8h}\index{MCAL/Interrupts.h@{MCAL/Interrupts.h}}
+{\ttfamily \#include \char`\"{}../\+Registers.\+h\char`\"{}}\newline
+Include dependency graph for Interrupts.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{_interrupts_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_interrupts_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_interrupts_8h_af45e91392ec55b2159133796931c0292}{TIMER0\+\_\+\+OVF}}~\+\_\+\+\_\+vector\+\_\+12
+\item 
+\#define \mbox{\hyperlink{_interrupts_8h_adf5dd6733f063b4848755903a3c27ab7}{EXT\+\_\+\+INT\+\_\+0}}~\+\_\+\+\_\+vector\+\_\+1
+\item 
+\#define \mbox{\hyperlink{_interrupts_8h_a40d118393b4ac5bd6b6cc46f7d23b842}{EXT\+\_\+\+INT\+\_\+1}}~\+\_\+\+\_\+vector\+\_\+2
+\item 
+\#define \mbox{\hyperlink{_interrupts_8h_a67149b8c11c3617324b8b17780811ed0}{EXT\+\_\+\+INT\+\_\+2}}~\+\_\+\+\_\+vector\+\_\+3
+\item 
+\#define \mbox{\hyperlink{_interrupts_8h_aad5ebd34cb344c26ac87594f79b06b73}{sei}}()~\+\_\+\+\_\+asm\+\_\+\+\_\+ \+\_\+\+\_\+volatile\+\_\+\+\_\+(\char`\"{}sei\char`\"{} \+::: \char`\"{}memory\char`\"{})
+\begin{DoxyCompactList}\small\item\em Enable the interrupt in the status register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_interrupts_8h_a68c330e94fe121eba993e5a5973c3162}{cli}}()~\+\_\+\+\_\+asm\+\_\+\+\_\+ \+\_\+\+\_\+volatile\+\_\+\+\_\+(\char`\"{}cli\char`\"{} \+::: \char`\"{}memory\char`\"{})
+\begin{DoxyCompactList}\small\item\em clear the interrupt in the status register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_interrupts_8h_aef9ee27676f002a54355685968b07da5}{ISR}}(INT\+\_\+\+VECT)
+\begin{DoxyCompactList}\small\item\em Interrupt definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_interrupts_8h_a68c330e94fe121eba993e5a5973c3162}\label{_interrupts_8h_a68c330e94fe121eba993e5a5973c3162}} 
+\index{Interrupts.h@{Interrupts.h}!cli@{cli}}
+\index{cli@{cli}!Interrupts.h@{Interrupts.h}}
+\doxysubsubsection{\texorpdfstring{cli}{cli}}
+{\footnotesize\ttfamily \#define cli(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\+\_\+\+\_\+asm\+\_\+\+\_\+ \+\_\+\+\_\+volatile\+\_\+\+\_\+(\char`\"{}cli\char`\"{} \+::: \char`\"{}memory\char`\"{})}
+
+
+
+clear the interrupt in the status register 
+
+\mbox{\Hypertarget{_interrupts_8h_adf5dd6733f063b4848755903a3c27ab7}\label{_interrupts_8h_adf5dd6733f063b4848755903a3c27ab7}} 
+\index{Interrupts.h@{Interrupts.h}!EXT\_INT\_0@{EXT\_INT\_0}}
+\index{EXT\_INT\_0@{EXT\_INT\_0}!Interrupts.h@{Interrupts.h}}
+\doxysubsubsection{\texorpdfstring{EXT\_INT\_0}{EXT\_INT\_0}}
+{\footnotesize\ttfamily \#define EXT\+\_\+\+INT\+\_\+0~\+\_\+\+\_\+vector\+\_\+1}
+
+\mbox{\Hypertarget{_interrupts_8h_a40d118393b4ac5bd6b6cc46f7d23b842}\label{_interrupts_8h_a40d118393b4ac5bd6b6cc46f7d23b842}} 
+\index{Interrupts.h@{Interrupts.h}!EXT\_INT\_1@{EXT\_INT\_1}}
+\index{EXT\_INT\_1@{EXT\_INT\_1}!Interrupts.h@{Interrupts.h}}
+\doxysubsubsection{\texorpdfstring{EXT\_INT\_1}{EXT\_INT\_1}}
+{\footnotesize\ttfamily \#define EXT\+\_\+\+INT\+\_\+1~\+\_\+\+\_\+vector\+\_\+2}
+
+\mbox{\Hypertarget{_interrupts_8h_a67149b8c11c3617324b8b17780811ed0}\label{_interrupts_8h_a67149b8c11c3617324b8b17780811ed0}} 
+\index{Interrupts.h@{Interrupts.h}!EXT\_INT\_2@{EXT\_INT\_2}}
+\index{EXT\_INT\_2@{EXT\_INT\_2}!Interrupts.h@{Interrupts.h}}
+\doxysubsubsection{\texorpdfstring{EXT\_INT\_2}{EXT\_INT\_2}}
+{\footnotesize\ttfamily \#define EXT\+\_\+\+INT\+\_\+2~\+\_\+\+\_\+vector\+\_\+3}
+
+\mbox{\Hypertarget{_interrupts_8h_aef9ee27676f002a54355685968b07da5}\label{_interrupts_8h_aef9ee27676f002a54355685968b07da5}} 
+\index{Interrupts.h@{Interrupts.h}!ISR@{ISR}}
+\index{ISR@{ISR}!Interrupts.h@{Interrupts.h}}
+\doxysubsubsection{\texorpdfstring{ISR}{ISR}}
+{\footnotesize\ttfamily \#define ISR(\begin{DoxyParamCaption}\item[{}]{INT\+\_\+\+VECT }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} INT\_VECT(\textcolor{keywordtype}{void})  \_\_attribute\_\_((signal,used));\(\backslash\)}
+\DoxyCodeLine{\textcolor{keywordtype}{void} INT\_VECT(\textcolor{keywordtype}{void})}
+
+\end{DoxyCode}
+
+
+Interrupt definition. 
+
+\mbox{\Hypertarget{_interrupts_8h_aad5ebd34cb344c26ac87594f79b06b73}\label{_interrupts_8h_aad5ebd34cb344c26ac87594f79b06b73}} 
+\index{Interrupts.h@{Interrupts.h}!sei@{sei}}
+\index{sei@{sei}!Interrupts.h@{Interrupts.h}}
+\doxysubsubsection{\texorpdfstring{sei}{sei}}
+{\footnotesize\ttfamily \#define sei(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\+\_\+\+\_\+asm\+\_\+\+\_\+ \+\_\+\+\_\+volatile\+\_\+\+\_\+(\char`\"{}sei\char`\"{} \+::: \char`\"{}memory\char`\"{})}
+
+
+
+Enable the interrupt in the status register. 
+
+\mbox{\Hypertarget{_interrupts_8h_af45e91392ec55b2159133796931c0292}\label{_interrupts_8h_af45e91392ec55b2159133796931c0292}} 
+\index{Interrupts.h@{Interrupts.h}!TIMER0\_OVF@{TIMER0\_OVF}}
+\index{TIMER0\_OVF@{TIMER0\_OVF}!Interrupts.h@{Interrupts.h}}
+\doxysubsubsection{\texorpdfstring{TIMER0\_OVF}{TIMER0\_OVF}}
+{\footnotesize\ttfamily \#define TIMER0\+\_\+\+OVF~\+\_\+\+\_\+vector\+\_\+12}
+

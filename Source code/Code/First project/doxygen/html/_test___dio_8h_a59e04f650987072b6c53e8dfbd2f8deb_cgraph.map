@@ -1,0 +1,5 @@
+<map id="TRAFF_DIO_012" name="TRAFF_DIO_012">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,125,56"/>
+<area shape="rect" id="node2" href="$dio_8c.html#a5562321915cff9c4f693e4f60f402bbe" title="Initialize the pin of the port with the required direction." alt="" coords="181,5,249,31"/>
+<area shape="rect" id="node3" href="$dio_8c.html#a7185f996a914f2370815a3a7f8de0736" title="write a value in the pin" alt="" coords="173,55,256,80"/>
+</map>

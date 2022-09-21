@@ -1,0 +1,189 @@
+.TH "ECUL/LED Driver/led.h" 3 "Tue Sep 13 2022" "Trafic Light LED" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ECUL/LED Driver/led.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./\&.\&./MCAL/DIO Driver/dio\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCAR_LED_GREEN\fP   \fBPIN0\fP"
+.br
+.ti -1c
+.RI "#define \fBCAR_LED_YELLOW\fP   \fBPIN1\fP"
+.br
+.ti -1c
+.RI "#define \fBCAR_LED_RED\fP   \fBPIN2\fP"
+.br
+.ti -1c
+.RI "#define \fBPEDES_LED_GREEN\fP   \fBPIN0\fP"
+.br
+.ti -1c
+.RI "#define \fBPEDES_LED_YELLOW\fP   \fBPIN1\fP"
+.br
+.ti -1c
+.RI "#define \fBPEDES_LED_RED\fP   \fBPIN2\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStatus\fP \fBLED_Init\fP (\fBuint8_t\fP ledPort, \fBuint8_t\fP ledPin)"
+.br
+.RI "Initialize the LED PIN\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBLED_On\fP (\fBuint8_t\fP ledPort, \fBuint8_t\fP ledPin)"
+.br
+.RI "Turns LED on\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBLED_Off\fP (\fBuint8_t\fP ledPort, \fBuint8_t\fP ledPin)"
+.br
+.RI "Turns LED Off\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBLED_toggle\fP (\fBuint8_t\fP ledPort, \fBuint8_t\fP ledPin)"
+.br
+.RI "Toggle the status of the LED\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBAuthor\fP
+.RS 4
+Moataz Khaled 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+0\&.1 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2022-09-12
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2022 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CAR_LED_GREEN   \fBPIN0\fP"
+
+.SS "#define CAR_LED_RED   \fBPIN2\fP"
+
+.SS "#define CAR_LED_YELLOW   \fBPIN1\fP"
+
+.SS "#define PEDES_LED_GREEN   \fBPIN0\fP"
+
+.SS "#define PEDES_LED_RED   \fBPIN2\fP"
+
+.SS "#define PEDES_LED_YELLOW   \fBPIN1\fP"
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBStatus\fP LED_Init (\fBuint8_t\fP ledPort, \fBuint8_t\fP ledPin)"
+
+.PP
+Initialize the LED PIN\&. Calls DIO_Init with specific port and pin with OUT direction 
+.PP
+\fBParameters\fP
+.RS 4
+\fIledPort\fP Port containing the PIN that will be set as output 
+.br
+\fIledPin\fP PIN to be set as output 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBDIO_init()\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status NOT_OK if initialization failed, return OK otherwise 
+.RE
+.PP
+
+.SS "\fBStatus\fP LED_Off (\fBuint8_t\fP ledPort, \fBuint8_t\fP ledPin)"
+
+.PP
+Turns LED Off\&. Calls DIO_Write with specific port and pin to set the pin to LOW 
+.PP
+\fBParameters\fP
+.RS 4
+\fIledPort\fP Port containing the PIN that will be set to low 
+.br
+\fIledPin\fP PIN to be set as output 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBDIO_Write()\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status return if turning off the LED fails, return OK otherwise 
+.RE
+.PP
+
+.SS "\fBStatus\fP LED_On (\fBuint8_t\fP ledPort, \fBuint8_t\fP ledPin)"
+
+.PP
+Turns LED on\&. Calls DIO_Write with specific port and pin to set the pin to high 
+.PP
+\fBParameters\fP
+.RS 4
+\fIledPort\fP Port containing the PIN that will be set to HIGH 
+.br
+\fIledPin\fP PIN to be set as output 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBDIO_Write()\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status return if turning on the LED fails, return OK otherwise 
+.RE
+.PP
+
+.SS "\fBStatus\fP LED_toggle (\fBuint8_t\fP ledPort, \fBuint8_t\fP ledPin)"
+
+.PP
+Toggle the status of the LED\&. Calls DIO_Toggle with specific port and pin to flip the status of the pin 
+.PP
+\fBParameters\fP
+.RS 4
+\fIledPort\fP Port containing the PIN that will be flipped 
+.br
+\fIledPin\fP PIN to be set as output 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBDIO_Toggle()\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status return if toggling the LED fails, return OK otherwise 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Trafic Light LED from the source code\&.

@@ -1,0 +1,162 @@
+.TH "MCAL/DIO Driver/dio.h" 3 "Tue Sep 13 2022" "Trafic Light LED" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MCAL/DIO Driver/dio.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./\&.\&./Registers\&.h'\fP
+.br
+\fC#include '\&.\&./Interrupts\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPort_A\fP   'A'"
+.br
+.ti -1c
+.RI "#define \fBPort_B\fP   'B'"
+.br
+.ti -1c
+.RI "#define \fBPort_C\fP   'C'"
+.br
+.ti -1c
+.RI "#define \fBPort_D\fP   'D'"
+.br
+.ti -1c
+.RI "#define \fBIN\fP   0"
+.br
+.ti -1c
+.RI "#define \fBOUT\fP   1"
+.br
+.ti -1c
+.RI "#define \fBLOW\fP   0"
+.br
+.ti -1c
+.RI "#define \fBHIGH\fP   1"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStatus\fP \fBDIO_init\fP (\fBuint8_t\fP pinNumber, \fBuint8_t\fP portNumber, \fBuint8_t\fP direction)"
+.br
+.RI "Initialize the pin of the port with the required direction\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBDIO_Write\fP (\fBuint8_t\fP pinNumber, \fBuint8_t\fP portNumber, \fBuint8_t\fP value)"
+.br
+.RI "write a value in the pin "
+.ti -1c
+.RI "\fBStatus\fP \fBDIO_Toggle\fP (\fBuint8_t\fP pinNumber, \fBuint8_t\fP portNumber)"
+.br
+.RI "Toggle the value of the output pin\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBDIO_Read\fP (\fBuint8_t\fP pinNumber, \fBuint8_t\fP portNumber, \fBuint8_t\fP *value)"
+.br
+.RI "Read the value of a certain PIN\&. "
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HIGH   1"
+
+.SS "#define IN   0"
+
+.SS "#define LOW   0"
+
+.SS "#define OUT   1"
+
+.SS "#define Port_A   'A'"
+
+.SS "#define Port_B   'B'"
+
+.SS "#define Port_C   'C'"
+
+.SS "#define Port_D   'D'"
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBStatus\fP DIO_init (\fBuint8_t\fP pinNumber, \fBuint8_t\fP portNumber, \fBuint8_t\fP direction)"
+
+.PP
+Initialize the pin of the port with the required direction\&. initialize a pin in a certain port with the direction
+.PP
+\fBParameters\fP
+.RS 4
+\fIpinNumber\fP PIN that will be set 
+.br
+\fIportNumber\fP Port containing the PIN that will be set 
+.br
+\fIdirection\fP (IN//OUT) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status return Not_Ok if the passed port is not in range (A->D) or pin number > 7 
+.RE
+.PP
+
+.SS "\fBStatus\fP DIO_Read (\fBuint8_t\fP pinNumber, \fBuint8_t\fP portNumber, \fBuint8_t\fP * value)"
+
+.PP
+Read the value of a certain PIN\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpinNumber\fP PIN that will be read 
+.br
+\fIportNumber\fP Port containing the PIN that will be read 
+.br
+\fIvalue\fP pointer holds the state of the PIN (HIGH or LOW) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status return Not_Ok if the passed pin direction is in not set as input or pin number > 7, otherwise return Ok 
+.RE
+.PP
+
+.SS "\fBStatus\fP DIO_Toggle (\fBuint8_t\fP pinNumber, \fBuint8_t\fP portNumber)"
+
+.PP
+Toggle the value of the output pin\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpinNumber\fP PIN that will be toggled 
+.br
+\fIportNumber\fP Port containing the PIN that will be toggled 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status return Not_Ok if the passed pin direction is in not set as output or pin number > 7, otherwise return Ok 
+.RE
+.PP
+
+.SS "\fBStatus\fP DIO_Write (\fBuint8_t\fP pinNumber, \fBuint8_t\fP portNumber, \fBuint8_t\fP value)"
+
+.PP
+write a value in the pin 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpinNumber\fP PIN that will be set 
+.br
+\fIportNumber\fP Port containing the PIN that will be set 
+.br
+\fIvalue\fP (HIGH/LOW) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status return Not_Ok if the passed pin direction is in not set as output or pin number > 7, otherwise return Ok 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Trafic Light LED from the source code\&.

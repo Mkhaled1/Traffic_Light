@@ -1,0 +1,281 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}System Design Traffic Light project}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}System Design (proteus)}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}System layers}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}System Drivers}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.5}state machine}{5}{section.1.5}%
+\contentsline {chapter}{\numberline {2}File Index}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{7}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Documentation}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}App/app.h File Reference}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{10}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Macro Definition Documentation}{10}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}ON\_DELAY}{10}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}TOGGLE\_DELAY}{10}{subsubsection.3.1.2.2}%
+\contentsline {subsection}{\numberline {3.1.3}Typedef Documentation}{11}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}LedMode}{11}{subsubsection.3.1.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.3.2}Mode}{11}{subsubsection.3.1.3.2}%
+\contentsline {subsection}{\numberline {3.1.4}Enumeration Type Documentation}{11}{subsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.4.1}LedMode}{11}{subsubsection.3.1.4.1}%
+\contentsline {subsubsection}{\numberline {3.1.4.2}Mode}{11}{subsubsection.3.1.4.2}%
+\contentsline {subsection}{\numberline {3.1.5}Function Documentation}{12}{subsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.5.1}AppStart()}{12}{subsubsection.3.1.5.1}%
+\contentsline {subsubsection}{\numberline {3.1.5.2}Blink\_Both\_YELLOW()}{12}{subsubsection.3.1.5.2}%
+\contentsline {subsubsection}{\numberline {3.1.5.3}Blink\_CAR\_YELLOW()}{13}{subsubsection.3.1.5.3}%
+\contentsline {subsubsection}{\numberline {3.1.5.4}LEDS\_OFF()}{14}{subsubsection.3.1.5.4}%
+\contentsline {section}{\numberline {3.2}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Doc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}pages/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System Design.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md File Reference}{15}{section.3.3}%
+\contentsline {section}{\numberline {3.4}ECUL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Button Driver/button.c File Reference}{15}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{16}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Function Documentation}{17}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}BUTTON\_Init()}{17}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}BUTTON\_read()}{18}{subsubsection.3.4.2.2}%
+\contentsline {section}{\numberline {3.5}ECUL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Button Driver/button.h File Reference}{18}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{20}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Macro Definition Documentation}{20}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}PEDESTRIAN\_BUTTON}{20}{subsubsection.3.5.2.1}%
+\contentsline {subsection}{\numberline {3.5.3}Function Documentation}{20}{subsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}BUTTON\_Init()}{20}{subsubsection.3.5.3.1}%
+\contentsline {subsubsection}{\numberline {3.5.3.2}BUTTON\_read()}{21}{subsubsection.3.5.3.2}%
+\contentsline {section}{\numberline {3.6}button.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{22}{section.3.6}%
+\contentsline {section}{\numberline {3.7}ECUL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LED Driver/led.c File Reference}{23}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{23}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Function Documentation}{24}{subsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}LED\_Init()}{24}{subsubsection.3.7.2.1}%
+\contentsline {subsubsection}{\numberline {3.7.2.2}LED\_Off()}{25}{subsubsection.3.7.2.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.3}LED\_On()}{26}{subsubsection.3.7.2.3}%
+\contentsline {subsubsection}{\numberline {3.7.2.4}LED\_toggle()}{27}{subsubsection.3.7.2.4}%
+\contentsline {section}{\numberline {3.8}ECUL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LED Driver/led.h File Reference}{28}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{30}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Macro Definition Documentation}{30}{subsection.3.8.2}%
+\contentsline {subsubsection}{\numberline {3.8.2.1}CAR\_LED\_GREEN}{30}{subsubsection.3.8.2.1}%
+\contentsline {subsubsection}{\numberline {3.8.2.2}CAR\_LED\_RED}{30}{subsubsection.3.8.2.2}%
+\contentsline {subsubsection}{\numberline {3.8.2.3}CAR\_LED\_YELLOW}{31}{subsubsection.3.8.2.3}%
+\contentsline {subsubsection}{\numberline {3.8.2.4}PEDES\_LED\_GREEN}{31}{subsubsection.3.8.2.4}%
+\contentsline {subsubsection}{\numberline {3.8.2.5}PEDES\_LED\_RED}{31}{subsubsection.3.8.2.5}%
+\contentsline {subsubsection}{\numberline {3.8.2.6}PEDES\_LED\_YELLOW}{31}{subsubsection.3.8.2.6}%
+\contentsline {subsection}{\numberline {3.8.3}Function Documentation}{31}{subsection.3.8.3}%
+\contentsline {subsubsection}{\numberline {3.8.3.1}LED\_Init()}{31}{subsubsection.3.8.3.1}%
+\contentsline {subsubsection}{\numberline {3.8.3.2}LED\_Off()}{32}{subsubsection.3.8.3.2}%
+\contentsline {subsubsection}{\numberline {3.8.3.3}LED\_On()}{33}{subsubsection.3.8.3.3}%
+\contentsline {subsubsection}{\numberline {3.8.3.4}LED\_toggle()}{34}{subsubsection.3.8.3.4}%
+\contentsline {section}{\numberline {3.9}led.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{35}{section.3.9}%
+\contentsline {section}{\numberline {3.10}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c File Reference}{35}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{37}{subsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.10.2}Macro Definition Documentation}{37}{subsection.3.10.2}%
+\contentsline {subsubsection}{\numberline {3.10.2.1}F\_CPU}{37}{subsubsection.3.10.2.1}%
+\contentsline {subsection}{\numberline {3.10.3}Function Documentation}{37}{subsection.3.10.3}%
+\contentsline {subsubsection}{\numberline {3.10.3.1}AppStart()}{38}{subsubsection.3.10.3.1}%
+\contentsline {subsubsection}{\numberline {3.10.3.2}Blink\_Both\_YELLOW()}{38}{subsubsection.3.10.3.2}%
+\contentsline {subsubsection}{\numberline {3.10.3.3}Blink\_CAR\_YELLOW()}{39}{subsubsection.3.10.3.3}%
+\contentsline {subsubsection}{\numberline {3.10.3.4}ISR()}{40}{subsubsection.3.10.3.4}%
+\contentsline {subsubsection}{\numberline {3.10.3.5}LEDS\_OFF()}{41}{subsubsection.3.10.3.5}%
+\contentsline {subsubsection}{\numberline {3.10.3.6}main()}{41}{subsubsection.3.10.3.6}%
+\contentsline {subsection}{\numberline {3.10.4}Variable Documentation}{42}{subsection.3.10.4}%
+\contentsline {subsubsection}{\numberline {3.10.4.1}App\_state}{42}{subsubsection.3.10.4.1}%
+\contentsline {subsubsection}{\numberline {3.10.4.2}current\_carLed\_Mode}{42}{subsubsection.3.10.4.2}%
+\contentsline {subsubsection}{\numberline {3.10.4.3}currentMode}{42}{subsubsection.3.10.4.3}%
+\contentsline {subsubsection}{\numberline {3.10.4.4}FirstState}{43}{subsubsection.3.10.4.4}%
+\contentsline {subsubsection}{\numberline {3.10.4.5}Flag}{43}{subsubsection.3.10.4.5}%
+\contentsline {subsubsection}{\numberline {3.10.4.6}previous\_carLed\_Mode}{43}{subsubsection.3.10.4.6}%
+\contentsline {section}{\numberline {3.11}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DIO Driver/dio.c File Reference}{43}{section.3.11}%
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{44}{subsection.3.11.1}%
+\contentsline {subsection}{\numberline {3.11.2}Function Documentation}{44}{subsection.3.11.2}%
+\contentsline {subsubsection}{\numberline {3.11.2.1}DIO\_init()}{44}{subsubsection.3.11.2.1}%
+\contentsline {subsubsection}{\numberline {3.11.2.2}DIO\_Read()}{46}{subsubsection.3.11.2.2}%
+\contentsline {subsubsection}{\numberline {3.11.2.3}DIO\_Toggle()}{47}{subsubsection.3.11.2.3}%
+\contentsline {subsubsection}{\numberline {3.11.2.4}DIO\_Write()}{47}{subsubsection.3.11.2.4}%
+\contentsline {section}{\numberline {3.12}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DIO Driver/dio.h File Reference}{48}{section.3.12}%
+\contentsline {subsection}{\numberline {3.12.1}Macro Definition Documentation}{50}{subsection.3.12.1}%
+\contentsline {subsubsection}{\numberline {3.12.1.1}HIGH}{50}{subsubsection.3.12.1.1}%
+\contentsline {subsubsection}{\numberline {3.12.1.2}IN}{50}{subsubsection.3.12.1.2}%
+\contentsline {subsubsection}{\numberline {3.12.1.3}LOW}{50}{subsubsection.3.12.1.3}%
+\contentsline {subsubsection}{\numberline {3.12.1.4}OUT}{50}{subsubsection.3.12.1.4}%
+\contentsline {subsubsection}{\numberline {3.12.1.5}Port\_A}{50}{subsubsection.3.12.1.5}%
+\contentsline {subsubsection}{\numberline {3.12.1.6}Port\_B}{51}{subsubsection.3.12.1.6}%
+\contentsline {subsubsection}{\numberline {3.12.1.7}Port\_C}{51}{subsubsection.3.12.1.7}%
+\contentsline {subsubsection}{\numberline {3.12.1.8}Port\_D}{51}{subsubsection.3.12.1.8}%
+\contentsline {subsection}{\numberline {3.12.2}Function Documentation}{51}{subsection.3.12.2}%
+\contentsline {subsubsection}{\numberline {3.12.2.1}DIO\_init()}{51}{subsubsection.3.12.2.1}%
+\contentsline {subsubsection}{\numberline {3.12.2.2}DIO\_Read()}{53}{subsubsection.3.12.2.2}%
+\contentsline {subsubsection}{\numberline {3.12.2.3}DIO\_Toggle()}{54}{subsubsection.3.12.2.3}%
+\contentsline {subsubsection}{\numberline {3.12.2.4}DIO\_Write()}{54}{subsubsection.3.12.2.4}%
+\contentsline {section}{\numberline {3.13}dio.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{55}{section.3.13}%
+\contentsline {section}{\numberline {3.14}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interrupts.h File Reference}{56}{section.3.14}%
+\contentsline {subsection}{\numberline {3.14.1}Macro Definition Documentation}{57}{subsection.3.14.1}%
+\contentsline {subsubsection}{\numberline {3.14.1.1}cli}{57}{subsubsection.3.14.1.1}%
+\contentsline {subsubsection}{\numberline {3.14.1.2}EXT\_INT\_0}{57}{subsubsection.3.14.1.2}%
+\contentsline {subsubsection}{\numberline {3.14.1.3}EXT\_INT\_1}{57}{subsubsection.3.14.1.3}%
+\contentsline {subsubsection}{\numberline {3.14.1.4}EXT\_INT\_2}{57}{subsubsection.3.14.1.4}%
+\contentsline {subsubsection}{\numberline {3.14.1.5}ISR}{58}{subsubsection.3.14.1.5}%
+\contentsline {subsubsection}{\numberline {3.14.1.6}sei}{58}{subsubsection.3.14.1.6}%
+\contentsline {subsubsection}{\numberline {3.14.1.7}TIMER0\_OVF}{58}{subsubsection.3.14.1.7}%
+\contentsline {section}{\numberline {3.15}Interrupts.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{58}{section.3.15}%
+\contentsline {section}{\numberline {3.16}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Timer/timer.c File Reference}{59}{section.3.16}%
+\contentsline {subsection}{\numberline {3.16.1}Detailed Description}{59}{subsection.3.16.1}%
+\contentsline {subsection}{\numberline {3.16.2}Function Documentation}{60}{subsection.3.16.2}%
+\contentsline {subsubsection}{\numberline {3.16.2.1}timer0\_Init()}{60}{subsubsection.3.16.2.1}%
+\contentsline {subsubsection}{\numberline {3.16.2.2}timer0\_start()}{60}{subsubsection.3.16.2.2}%
+\contentsline {subsubsection}{\numberline {3.16.2.3}timer0\_stop()}{61}{subsubsection.3.16.2.3}%
+\contentsline {section}{\numberline {3.17}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Timer/timer.h File Reference}{62}{section.3.17}%
+\contentsline {subsection}{\numberline {3.17.1}Macro Definition Documentation}{63}{subsection.3.17.1}%
+\contentsline {subsubsection}{\numberline {3.17.1.1}WGM00}{63}{subsubsection.3.17.1.1}%
+\contentsline {subsubsection}{\numberline {3.17.1.2}WGM01}{63}{subsubsection.3.17.1.2}%
+\contentsline {subsection}{\numberline {3.17.2}Typedef Documentation}{63}{subsection.3.17.2}%
+\contentsline {subsubsection}{\numberline {3.17.2.1}clk\_source\_T0}{63}{subsubsection.3.17.2.1}%
+\contentsline {subsubsection}{\numberline {3.17.2.2}COM\_Mode}{64}{subsubsection.3.17.2.2}%
+\contentsline {subsubsection}{\numberline {3.17.2.3}Timer\_Mode}{64}{subsubsection.3.17.2.3}%
+\contentsline {subsection}{\numberline {3.17.3}Enumeration Type Documentation}{64}{subsection.3.17.3}%
+\contentsline {subsubsection}{\numberline {3.17.3.1}clk\_source\_T0}{64}{subsubsection.3.17.3.1}%
+\contentsline {subsubsection}{\numberline {3.17.3.2}COM\_Mode}{64}{subsubsection.3.17.3.2}%
+\contentsline {subsubsection}{\numberline {3.17.3.3}Timer\_Mode}{65}{subsubsection.3.17.3.3}%
+\contentsline {subsection}{\numberline {3.17.4}Function Documentation}{65}{subsection.3.17.4}%
+\contentsline {subsubsection}{\numberline {3.17.4.1}timer0\_Init()}{65}{subsubsection.3.17.4.1}%
+\contentsline {subsubsection}{\numberline {3.17.4.2}timer0\_start()}{66}{subsubsection.3.17.4.2}%
+\contentsline {subsubsection}{\numberline {3.17.4.3}timer0\_stop()}{66}{subsubsection.3.17.4.3}%
+\contentsline {section}{\numberline {3.18}timer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{67}{section.3.18}%
+\contentsline {section}{\numberline {3.19}Registers.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{68}{section.3.19}%
+\contentsline {subsection}{\numberline {3.19.1}Macro Definition Documentation}{69}{subsection.3.19.1}%
+\contentsline {subsubsection}{\numberline {3.19.1.1}bitclear}{69}{subsubsection.3.19.1.1}%
+\contentsline {subsubsection}{\numberline {3.19.1.2}bitflip}{69}{subsubsection.3.19.1.2}%
+\contentsline {subsubsection}{\numberline {3.19.1.3}bitRead}{69}{subsubsection.3.19.1.3}%
+\contentsline {subsubsection}{\numberline {3.19.1.4}bitset}{70}{subsubsection.3.19.1.4}%
+\contentsline {subsubsection}{\numberline {3.19.1.5}DDRA}{70}{subsubsection.3.19.1.5}%
+\contentsline {subsubsection}{\numberline {3.19.1.6}DDRB}{70}{subsubsection.3.19.1.6}%
+\contentsline {subsubsection}{\numberline {3.19.1.7}DDRC}{70}{subsubsection.3.19.1.7}%
+\contentsline {subsubsection}{\numberline {3.19.1.8}DDRD}{70}{subsubsection.3.19.1.8}%
+\contentsline {subsubsection}{\numberline {3.19.1.9}GICR}{70}{subsubsection.3.19.1.9}%
+\contentsline {subsubsection}{\numberline {3.19.1.10}GIFR}{70}{subsubsection.3.19.1.10}%
+\contentsline {subsubsection}{\numberline {3.19.1.11}INT0}{71}{subsubsection.3.19.1.11}%
+\contentsline {subsubsection}{\numberline {3.19.1.12}ISC00}{71}{subsubsection.3.19.1.12}%
+\contentsline {subsubsection}{\numberline {3.19.1.13}ISC01}{71}{subsubsection.3.19.1.13}%
+\contentsline {subsubsection}{\numberline {3.19.1.14}MCUCR}{71}{subsubsection.3.19.1.14}%
+\contentsline {subsubsection}{\numberline {3.19.1.15}MCUCSR}{71}{subsubsection.3.19.1.15}%
+\contentsline {subsubsection}{\numberline {3.19.1.16}OCR0}{71}{subsubsection.3.19.1.16}%
+\contentsline {subsubsection}{\numberline {3.19.1.17}OCR2}{71}{subsubsection.3.19.1.17}%
+\contentsline {subsubsection}{\numberline {3.19.1.18}PIN0}{71}{subsubsection.3.19.1.18}%
+\contentsline {subsubsection}{\numberline {3.19.1.19}PIN1}{72}{subsubsection.3.19.1.19}%
+\contentsline {subsubsection}{\numberline {3.19.1.20}PIN2}{72}{subsubsection.3.19.1.20}%
+\contentsline {subsubsection}{\numberline {3.19.1.21}PIN3}{72}{subsubsection.3.19.1.21}%
+\contentsline {subsubsection}{\numberline {3.19.1.22}PIN4}{72}{subsubsection.3.19.1.22}%
+\contentsline {subsubsection}{\numberline {3.19.1.23}PIN5}{72}{subsubsection.3.19.1.23}%
+\contentsline {subsubsection}{\numberline {3.19.1.24}PIN6}{72}{subsubsection.3.19.1.24}%
+\contentsline {subsubsection}{\numberline {3.19.1.25}PIN7}{72}{subsubsection.3.19.1.25}%
+\contentsline {subsubsection}{\numberline {3.19.1.26}PINA}{72}{subsubsection.3.19.1.26}%
+\contentsline {subsubsection}{\numberline {3.19.1.27}PINB}{73}{subsubsection.3.19.1.27}%
+\contentsline {subsubsection}{\numberline {3.19.1.28}PINC}{73}{subsubsection.3.19.1.28}%
+\contentsline {subsubsection}{\numberline {3.19.1.29}PIND}{73}{subsubsection.3.19.1.29}%
+\contentsline {subsubsection}{\numberline {3.19.1.30}PORTA}{73}{subsubsection.3.19.1.30}%
+\contentsline {subsubsection}{\numberline {3.19.1.31}PORTB}{73}{subsubsection.3.19.1.31}%
+\contentsline {subsubsection}{\numberline {3.19.1.32}PORTC}{73}{subsubsection.3.19.1.32}%
+\contentsline {subsubsection}{\numberline {3.19.1.33}PORTD}{73}{subsubsection.3.19.1.33}%
+\contentsline {subsubsection}{\numberline {3.19.1.34}SREG}{73}{subsubsection.3.19.1.34}%
+\contentsline {subsubsection}{\numberline {3.19.1.35}TCCR0}{74}{subsubsection.3.19.1.35}%
+\contentsline {subsubsection}{\numberline {3.19.1.36}TCCR2}{74}{subsubsection.3.19.1.36}%
+\contentsline {subsubsection}{\numberline {3.19.1.37}TCNT0}{74}{subsubsection.3.19.1.37}%
+\contentsline {subsubsection}{\numberline {3.19.1.38}TCNT2}{74}{subsubsection.3.19.1.38}%
+\contentsline {subsubsection}{\numberline {3.19.1.39}TIFR}{74}{subsubsection.3.19.1.39}%
+\contentsline {section}{\numberline {3.20}Registers.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{74}{section.3.20}%
+\contentsline {section}{\numberline {3.21}Service/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Delay/delay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ms.c File Reference}{75}{section.3.21}%
+\contentsline {subsection}{\numberline {3.21.1}Detailed Description}{76}{subsection.3.21.1}%
+\contentsline {subsection}{\numberline {3.21.2}Function Documentation}{77}{subsection.3.21.2}%
+\contentsline {subsubsection}{\numberline {3.21.2.1}delay\_init\_0()}{77}{subsubsection.3.21.2.1}%
+\contentsline {subsubsection}{\numberline {3.21.2.2}delay\_ms\_0()}{78}{subsubsection.3.21.2.2}%
+\contentsline {section}{\numberline {3.22}Service/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Delay/delay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ms.h File Reference}{78}{section.3.22}%
+\contentsline {subsection}{\numberline {3.22.1}Function Documentation}{79}{subsection.3.22.1}%
+\contentsline {subsubsection}{\numberline {3.22.1.1}delay\_init\_0()}{80}{subsubsection.3.22.1.1}%
+\contentsline {subsubsection}{\numberline {3.22.1.2}delay\_ms\_0()}{81}{subsubsection.3.22.1.2}%
+\contentsline {subsubsection}{\numberline {3.22.1.3}Stop\_delay()}{82}{subsubsection.3.22.1.3}%
+\contentsline {section}{\numberline {3.23}delay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{82}{section.3.23}%
+\contentsline {section}{\numberline {3.24}Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dio.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c File Reference}{83}{section.3.24}%
+\contentsline {subsection}{\numberline {3.24.1}Detailed Description}{84}{subsection.3.24.1}%
+\contentsline {subsection}{\numberline {3.24.2}Function Documentation}{85}{subsection.3.24.2}%
+\contentsline {subsubsection}{\numberline {3.24.2.1}TRAFF\_DIO\_001()}{85}{subsubsection.3.24.2.1}%
+\contentsline {subsubsection}{\numberline {3.24.2.2}TRAFF\_DIO\_002()}{85}{subsubsection.3.24.2.2}%
+\contentsline {subsubsection}{\numberline {3.24.2.3}TRAFF\_DIO\_003()}{85}{subsubsection.3.24.2.3}%
+\contentsline {subsubsection}{\numberline {3.24.2.4}TRAFF\_DIO\_004()}{86}{subsubsection.3.24.2.4}%
+\contentsline {subsubsection}{\numberline {3.24.2.5}TRAFF\_DIO\_005()}{86}{subsubsection.3.24.2.5}%
+\contentsline {subsubsection}{\numberline {3.24.2.6}TRAFF\_DIO\_006()}{86}{subsubsection.3.24.2.6}%
+\contentsline {subsubsection}{\numberline {3.24.2.7}TRAFF\_DIO\_007()}{87}{subsubsection.3.24.2.7}%
+\contentsline {subsubsection}{\numberline {3.24.2.8}TRAFF\_DIO\_008()}{87}{subsubsection.3.24.2.8}%
+\contentsline {subsubsection}{\numberline {3.24.2.9}TRAFF\_DIO\_009()}{87}{subsubsection.3.24.2.9}%
+\contentsline {subsubsection}{\numberline {3.24.2.10}TRAFF\_DIO\_010()}{88}{subsubsection.3.24.2.10}%
+\contentsline {subsubsection}{\numberline {3.24.2.11}TRAFF\_DIO\_011()}{88}{subsubsection.3.24.2.11}%
+\contentsline {subsubsection}{\numberline {3.24.2.12}TRAFF\_DIO\_012()}{88}{subsubsection.3.24.2.12}%
+\contentsline {subsubsection}{\numberline {3.24.2.13}TRAFF\_DIO\_013()}{89}{subsubsection.3.24.2.13}%
+\contentsline {subsubsection}{\numberline {3.24.2.14}TRAFF\_DIO\_014()}{89}{subsubsection.3.24.2.14}%
+\contentsline {subsubsection}{\numberline {3.24.2.15}TRAFF\_DIO\_015()}{89}{subsubsection.3.24.2.15}%
+\contentsline {subsubsection}{\numberline {3.24.2.16}TRAFF\_DIO\_016()}{90}{subsubsection.3.24.2.16}%
+\contentsline {subsubsection}{\numberline {3.24.2.17}TRAFF\_DIO\_017()}{90}{subsubsection.3.24.2.17}%
+\contentsline {subsubsection}{\numberline {3.24.2.18}TRAFF\_DIO\_018()}{91}{subsubsection.3.24.2.18}%
+\contentsline {subsubsection}{\numberline {3.24.2.19}TRAFF\_DIO\_019()}{91}{subsubsection.3.24.2.19}%
+\contentsline {subsubsection}{\numberline {3.24.2.20}TRAFF\_DIO\_020()}{91}{subsubsection.3.24.2.20}%
+\contentsline {subsubsection}{\numberline {3.24.2.21}TRAFF\_DIO\_021()}{92}{subsubsection.3.24.2.21}%
+\contentsline {subsubsection}{\numberline {3.24.2.22}TRAFF\_DIO\_022()}{92}{subsubsection.3.24.2.22}%
+\contentsline {subsubsection}{\numberline {3.24.2.23}TRAFF\_DIO\_023()}{92}{subsubsection.3.24.2.23}%
+\contentsline {subsubsection}{\numberline {3.24.2.24}TRAFF\_DIO\_024()}{93}{subsubsection.3.24.2.24}%
+\contentsline {subsubsection}{\numberline {3.24.2.25}TRAFF\_DIO\_025()}{93}{subsubsection.3.24.2.25}%
+\contentsline {subsubsection}{\numberline {3.24.2.26}TRAFF\_DIO\_026()}{94}{subsubsection.3.24.2.26}%
+\contentsline {subsubsection}{\numberline {3.24.2.27}TRAFF\_DIO\_027()}{94}{subsubsection.3.24.2.27}%
+\contentsline {subsubsection}{\numberline {3.24.2.28}TRAFF\_DIO\_028()}{94}{subsubsection.3.24.2.28}%
+\contentsline {subsubsection}{\numberline {3.24.2.29}TRAFF\_DIO\_029()}{95}{subsubsection.3.24.2.29}%
+\contentsline {subsubsection}{\numberline {3.24.2.30}TRAFF\_DIO\_030()}{95}{subsubsection.3.24.2.30}%
+\contentsline {subsubsection}{\numberline {3.24.2.31}TRAFF\_DIO\_031()}{95}{subsubsection.3.24.2.31}%
+\contentsline {subsubsection}{\numberline {3.24.2.32}TRAFF\_DIO\_032()}{96}{subsubsection.3.24.2.32}%
+\contentsline {subsubsection}{\numberline {3.24.2.33}TRAFF\_DIO\_033()}{96}{subsubsection.3.24.2.33}%
+\contentsline {subsubsection}{\numberline {3.24.2.34}TRAFF\_DIO\_034()}{97}{subsubsection.3.24.2.34}%
+\contentsline {subsubsection}{\numberline {3.24.2.35}TRAFF\_DIO\_035()}{97}{subsubsection.3.24.2.35}%
+\contentsline {section}{\numberline {3.25}Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dio.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{97}{section.3.25}%
+\contentsline {subsection}{\numberline {3.25.1}Macro Definition Documentation}{98}{subsection.3.25.1}%
+\contentsline {subsubsection}{\numberline {3.25.1.1}PORT\_E}{98}{subsubsection.3.25.1.1}%
+\contentsline {subsection}{\numberline {3.25.2}Function Documentation}{99}{subsection.3.25.2}%
+\contentsline {subsubsection}{\numberline {3.25.2.1}TRAFF\_DIO\_001()}{99}{subsubsection.3.25.2.1}%
+\contentsline {subsubsection}{\numberline {3.25.2.2}TRAFF\_DIO\_002()}{99}{subsubsection.3.25.2.2}%
+\contentsline {subsubsection}{\numberline {3.25.2.3}TRAFF\_DIO\_003()}{99}{subsubsection.3.25.2.3}%
+\contentsline {subsubsection}{\numberline {3.25.2.4}TRAFF\_DIO\_004()}{100}{subsubsection.3.25.2.4}%
+\contentsline {subsubsection}{\numberline {3.25.2.5}TRAFF\_DIO\_005()}{100}{subsubsection.3.25.2.5}%
+\contentsline {subsubsection}{\numberline {3.25.2.6}TRAFF\_DIO\_006()}{100}{subsubsection.3.25.2.6}%
+\contentsline {subsubsection}{\numberline {3.25.2.7}TRAFF\_DIO\_007()}{101}{subsubsection.3.25.2.7}%
+\contentsline {subsubsection}{\numberline {3.25.2.8}TRAFF\_DIO\_008()}{101}{subsubsection.3.25.2.8}%
+\contentsline {subsubsection}{\numberline {3.25.2.9}TRAFF\_DIO\_009()}{101}{subsubsection.3.25.2.9}%
+\contentsline {subsubsection}{\numberline {3.25.2.10}TRAFF\_DIO\_010()}{102}{subsubsection.3.25.2.10}%
+\contentsline {subsubsection}{\numberline {3.25.2.11}TRAFF\_DIO\_011()}{102}{subsubsection.3.25.2.11}%
+\contentsline {subsubsection}{\numberline {3.25.2.12}TRAFF\_DIO\_012()}{102}{subsubsection.3.25.2.12}%
+\contentsline {subsubsection}{\numberline {3.25.2.13}TRAFF\_DIO\_013()}{103}{subsubsection.3.25.2.13}%
+\contentsline {subsubsection}{\numberline {3.25.2.14}TRAFF\_DIO\_014()}{103}{subsubsection.3.25.2.14}%
+\contentsline {subsubsection}{\numberline {3.25.2.15}TRAFF\_DIO\_015()}{103}{subsubsection.3.25.2.15}%
+\contentsline {subsubsection}{\numberline {3.25.2.16}TRAFF\_DIO\_016()}{104}{subsubsection.3.25.2.16}%
+\contentsline {subsubsection}{\numberline {3.25.2.17}TRAFF\_DIO\_017()}{104}{subsubsection.3.25.2.17}%
+\contentsline {subsubsection}{\numberline {3.25.2.18}TRAFF\_DIO\_018()}{105}{subsubsection.3.25.2.18}%
+\contentsline {subsubsection}{\numberline {3.25.2.19}TRAFF\_DIO\_019()}{105}{subsubsection.3.25.2.19}%
+\contentsline {subsubsection}{\numberline {3.25.2.20}TRAFF\_DIO\_020()}{105}{subsubsection.3.25.2.20}%
+\contentsline {subsubsection}{\numberline {3.25.2.21}TRAFF\_DIO\_021()}{106}{subsubsection.3.25.2.21}%
+\contentsline {subsubsection}{\numberline {3.25.2.22}TRAFF\_DIO\_022()}{106}{subsubsection.3.25.2.22}%
+\contentsline {subsubsection}{\numberline {3.25.2.23}TRAFF\_DIO\_023()}{106}{subsubsection.3.25.2.23}%
+\contentsline {subsubsection}{\numberline {3.25.2.24}TRAFF\_DIO\_024()}{107}{subsubsection.3.25.2.24}%
+\contentsline {subsubsection}{\numberline {3.25.2.25}TRAFF\_DIO\_025()}{107}{subsubsection.3.25.2.25}%
+\contentsline {subsubsection}{\numberline {3.25.2.26}TRAFF\_DIO\_026()}{108}{subsubsection.3.25.2.26}%
+\contentsline {subsubsection}{\numberline {3.25.2.27}TRAFF\_DIO\_027()}{108}{subsubsection.3.25.2.27}%
+\contentsline {subsubsection}{\numberline {3.25.2.28}TRAFF\_DIO\_028()}{108}{subsubsection.3.25.2.28}%
+\contentsline {subsubsection}{\numberline {3.25.2.29}TRAFF\_DIO\_029()}{109}{subsubsection.3.25.2.29}%
+\contentsline {subsubsection}{\numberline {3.25.2.30}TRAFF\_DIO\_030()}{109}{subsubsection.3.25.2.30}%
+\contentsline {subsubsection}{\numberline {3.25.2.31}TRAFF\_DIO\_031()}{109}{subsubsection.3.25.2.31}%
+\contentsline {subsubsection}{\numberline {3.25.2.32}TRAFF\_DIO\_032()}{110}{subsubsection.3.25.2.32}%
+\contentsline {subsubsection}{\numberline {3.25.2.33}TRAFF\_DIO\_033()}{110}{subsubsection.3.25.2.33}%
+\contentsline {subsubsection}{\numberline {3.25.2.34}TRAFF\_DIO\_034()}{111}{subsubsection.3.25.2.34}%
+\contentsline {subsubsection}{\numberline {3.25.2.35}TRAFF\_DIO\_035()}{111}{subsubsection.3.25.2.35}%
+\contentsline {section}{\numberline {3.26}Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dio.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{111}{section.3.26}%
+\contentsline {section}{\numberline {3.27}Types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{112}{section.3.27}%
+\contentsline {subsection}{\numberline {3.27.1}Macro Definition Documentation}{113}{subsection.3.27.1}%
+\contentsline {subsubsection}{\numberline {3.27.1.1}FALSE}{113}{subsubsection.3.27.1.1}%
+\contentsline {subsubsection}{\numberline {3.27.1.2}NULL}{113}{subsubsection.3.27.1.2}%
+\contentsline {subsubsection}{\numberline {3.27.1.3}TRUE}{113}{subsubsection.3.27.1.3}%
+\contentsline {subsection}{\numberline {3.27.2}Typedef Documentation}{113}{subsection.3.27.2}%
+\contentsline {subsubsection}{\numberline {3.27.2.1}Status}{113}{subsubsection.3.27.2.1}%
+\contentsline {subsubsection}{\numberline {3.27.2.2}uint16\_t}{113}{subsubsection.3.27.2.2}%
+\contentsline {subsubsection}{\numberline {3.27.2.3}uint8\_t}{114}{subsubsection.3.27.2.3}%
+\contentsline {subsection}{\numberline {3.27.3}Enumeration Type Documentation}{114}{subsection.3.27.3}%
+\contentsline {subsubsection}{\numberline {3.27.3.1}Status}{114}{subsubsection.3.27.3.1}%
+\contentsline {section}{\numberline {3.28}Types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{115}{section.3.28}%
+\contentsline {chapter}{Index}{117}{section*.188}%

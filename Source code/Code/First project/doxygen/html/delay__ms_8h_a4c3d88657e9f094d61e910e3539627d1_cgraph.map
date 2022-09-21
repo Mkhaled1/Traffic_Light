@@ -1,0 +1,5 @@
+<map id="delay_ms_0" name="delay_ms_0">
+<area shape="rect" id="node1" title="perform a delay with the required time passed in delay_ms" alt="" coords="5,31,97,56"/>
+<area shape="rect" id="node2" href="$timer_8c.html#aaed1e3c1198d785e3d5d0716e0aa9022" title="Start the timer 0." alt="" coords="145,5,236,31"/>
+<area shape="rect" id="node3" href="$timer_8c.html#a9180e184d96bacc8baa49a7a2ee1bfb3" title="stop the timer 0" alt="" coords="145,55,236,80"/>
+</map>

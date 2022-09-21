@@ -1,0 +1,4 @@
+<map id="LED_toggle" name="LED_toggle">
+<area shape="rect" id="node1" title="Toggle the status of the LED." alt="" coords="5,5,95,31"/>
+<area shape="rect" id="node2" href="$dio_8c.html#a66bc0fe366e60f31548ee264f63c0df1" title="Toggle the value of the output pin." alt="" coords="143,5,232,31"/>
+</map>

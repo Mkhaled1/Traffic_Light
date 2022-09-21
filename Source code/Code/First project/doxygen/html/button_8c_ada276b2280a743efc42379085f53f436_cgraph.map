@@ -1,0 +1,4 @@
+<map id="BUTTON_read" name="BUTTON_read">
+<area shape="rect" id="node1" title="Reads the input comming from the button connected to the microcontroller pin." alt="" coords="5,5,111,31"/>
+<area shape="rect" id="node2" href="$dio_8c.html#af9bf54e9bd517ba60f7e76f12f33869a" title="Read the value of a certain PIN." alt="" coords="159,5,240,31"/>
+</map>

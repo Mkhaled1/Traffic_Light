@@ -1,0 +1,69 @@
+.TH "MCAL/Interrupts.h" 3 "Tue Sep 13 2022" "Trafic Light LED" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MCAL/Interrupts.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./Registers\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIMER0_OVF\fP   __vector_12"
+.br
+.ti -1c
+.RI "#define \fBEXT_INT_0\fP   __vector_1"
+.br
+.ti -1c
+.RI "#define \fBEXT_INT_1\fP   __vector_2"
+.br
+.ti -1c
+.RI "#define \fBEXT_INT_2\fP   __vector_3"
+.br
+.ti -1c
+.RI "#define \fBsei\fP()   __asm__ __volatile__('sei' ::: 'memory')"
+.br
+.RI "Enable the interrupt in the status register\&. "
+.ti -1c
+.RI "#define \fBcli\fP()   __asm__ __volatile__('cli' ::: 'memory')"
+.br
+.RI "clear the interrupt in the status register "
+.ti -1c
+.RI "#define \fBISR\fP(INT_VECT)"
+.br
+.RI "Interrupt definition\&. "
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define cli()   __asm__ __volatile__('cli' ::: 'memory')"
+
+.PP
+clear the interrupt in the status register 
+.SS "#define EXT_INT_0   __vector_1"
+
+.SS "#define EXT_INT_1   __vector_2"
+
+.SS "#define EXT_INT_2   __vector_3"
+
+.SS "#define ISR(INT_VECT)"
+\fBValue:\fP
+.PP
+.nf
+void INT_VECT(void)  __attribute__((signal,used));\
+void INT_VECT(void)
+.fi
+.PP
+Interrupt definition\&. 
+.SS "#define sei()   __asm__ __volatile__('sei' ::: 'memory')"
+
+.PP
+Enable the interrupt in the status register\&. 
+.SS "#define TIMER0_OVF   __vector_12"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Trafic Light LED from the source code\&.

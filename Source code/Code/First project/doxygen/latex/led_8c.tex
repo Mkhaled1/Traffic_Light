@@ -1,0 +1,187 @@
+\hypertarget{led_8c}{}\doxysection{ECUL/\+LED Driver/led.c File Reference}
+\label{led_8c}\index{ECUL/LED Driver/led.c@{ECUL/LED Driver/led.c}}
+{\ttfamily \#include \char`\"{}led.\+h\char`\"{}}\newline
+Include dependency graph for led.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{led_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{led_8c_a17619bd8c32424e4d8aa668d8160b66d}{LED\+\_\+\+Init}} (\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} led\+Port, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} led\+Pin)
+\begin{DoxyCompactList}\small\item\em Initialize the LED PIN. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{led_8c_af09c4344af9f7b5bfacea0aba21ad240}{LED\+\_\+\+On}} (\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} led\+Port, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} led\+Pin)
+\begin{DoxyCompactList}\small\item\em Turns LED on. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{led_8c_a4b0a8a6c959732d3f6cb4ed60da13331}{LED\+\_\+\+Off}} (\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} led\+Port, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} led\+Pin)
+\begin{DoxyCompactList}\small\item\em Turns LED Off. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{led_8c_ac23b9cb9b3bad2c709933be0ddf23da0}{LED\+\_\+toggle}} (\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} led\+Port, \mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} led\+Pin)
+\begin{DoxyCompactList}\small\item\em Toggle the status of the LED. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Moataz Khaled 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/09-\/12
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{led_8c_a17619bd8c32424e4d8aa668d8160b66d}\label{led_8c_a17619bd8c32424e4d8aa668d8160b66d}} 
+\index{led.c@{led.c}!LED\_Init@{LED\_Init}}
+\index{LED\_Init@{LED\_Init}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{LED\_Init()}{LED\_Init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} LED\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{led\+Port,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{led\+Pin }\end{DoxyParamCaption})}
+
+
+
+Initialize the LED PIN. 
+
+Calls DIO\+\_\+\+Init with specific port and pin with OUT direction 
+\begin{DoxyParams}{Parameters}
+{\em led\+Port} & Port containing the PIN that will be set as output \\
+\hline
+{\em led\+Pin} & PIN to be set as output \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{dio_8c_a5562321915cff9c4f693e4f60f402bbe}{DIO\+\_\+init()}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Status NOT\+\_\+\+OK if initialization failed, return OK otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{led_8c_a17619bd8c32424e4d8aa668d8160b66d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{led_8c_a17619bd8c32424e4d8aa668d8160b66d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{led_8c_a4b0a8a6c959732d3f6cb4ed60da13331}\label{led_8c_a4b0a8a6c959732d3f6cb4ed60da13331}} 
+\index{led.c@{led.c}!LED\_Off@{LED\_Off}}
+\index{LED\_Off@{LED\_Off}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{LED\_Off()}{LED\_Off()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} LED\+\_\+\+Off (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{led\+Port,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{led\+Pin }\end{DoxyParamCaption})}
+
+
+
+Turns LED Off. 
+
+Calls DIO\+\_\+\+Write with specific port and pin to set the pin to LOW 
+\begin{DoxyParams}{Parameters}
+{\em led\+Port} & Port containing the PIN that will be set to low \\
+\hline
+{\em led\+Pin} & PIN to be set as output \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{dio_8c_a7185f996a914f2370815a3a7f8de0736}{DIO\+\_\+\+Write()}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Status return if turning off the LED fails, return OK otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{led_8c_a4b0a8a6c959732d3f6cb4ed60da13331_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{led_8c_a4b0a8a6c959732d3f6cb4ed60da13331_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{led_8c_af09c4344af9f7b5bfacea0aba21ad240}\label{led_8c_af09c4344af9f7b5bfacea0aba21ad240}} 
+\index{led.c@{led.c}!LED\_On@{LED\_On}}
+\index{LED\_On@{LED\_On}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{LED\_On()}{LED\_On()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} LED\+\_\+\+On (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{led\+Port,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{led\+Pin }\end{DoxyParamCaption})}
+
+
+
+Turns LED on. 
+
+Calls DIO\+\_\+\+Write with specific port and pin to set the pin to high 
+\begin{DoxyParams}{Parameters}
+{\em led\+Port} & Port containing the PIN that will be set to HIGH \\
+\hline
+{\em led\+Pin} & PIN to be set as output \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{dio_8c_a7185f996a914f2370815a3a7f8de0736}{DIO\+\_\+\+Write()}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Status return if turning on the LED fails, return OK otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{led_8c_af09c4344af9f7b5bfacea0aba21ad240_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{led_8c_af09c4344af9f7b5bfacea0aba21ad240_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{led_8c_ac23b9cb9b3bad2c709933be0ddf23da0}\label{led_8c_ac23b9cb9b3bad2c709933be0ddf23da0}} 
+\index{led.c@{led.c}!LED\_toggle@{LED\_toggle}}
+\index{LED\_toggle@{LED\_toggle}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{LED\_toggle()}{LED\_toggle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_types_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} LED\+\_\+toggle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{led\+Port,  }\item[{\mbox{\hyperlink{_types_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{led\+Pin }\end{DoxyParamCaption})}
+
+
+
+Toggle the status of the LED. 
+
+Calls DIO\+\_\+\+Toggle with specific port and pin to flip the status of the pin 
+\begin{DoxyParams}{Parameters}
+{\em led\+Port} & Port containing the PIN that will be flipped \\
+\hline
+{\em led\+Pin} & PIN to be set as output \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{dio_8c_a66bc0fe366e60f31548ee264f63c0df1}{DIO\+\_\+\+Toggle()}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Status return if toggling the LED fails, return OK otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{led_8c_ac23b9cb9b3bad2c709933be0ddf23da0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{led_8c_ac23b9cb9b3bad2c709933be0ddf23da0_icgraph}
+\end{center}
+\end{figure}

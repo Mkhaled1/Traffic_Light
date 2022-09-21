@@ -1,0 +1,108 @@
+.TH "ECUL/Button Driver/button.h" 3 "Tue Sep 13 2022" "Trafic Light LED" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ECUL/Button Driver/button.h \- button Driver that intialize and operates the DIO Pins as inputs connected to buttons  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./\&.\&./MCAL/DIO Driver/dio\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPEDESTRIAN_BUTTON\fP   \fBPIN2\fP"
+.br
+.RI "Definition of the Pedestrian button to be PIN2 in PORTB\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStatus\fP \fBBUTTON_Init\fP (\fBuint8_t\fP buttonPort, \fBuint8_t\fP buttonPin)"
+.br
+.RI "Initialize DIO PIN as input\&. "
+.ti -1c
+.RI "\fBStatus\fP \fBBUTTON_read\fP (\fBuint8_t\fP buttonPort, \fBuint8_t\fP buttonPin, volatile \fBuint8_t\fP *value)"
+.br
+.RI "Reads the input comming from the button connected to the microcontroller pin\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+button Driver that intialize and operates the DIO Pins as inputs connected to buttons 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Moataz Khaled 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+0\&.1 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2022-09-12
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2022 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define PEDESTRIAN_BUTTON   \fBPIN2\fP"
+
+.PP
+Definition of the Pedestrian button to be PIN2 in PORTB\&. 
+.SH "Function Documentation"
+.PP 
+.SS "\fBStatus\fP BUTTON_Init (\fBuint8_t\fP buttonPort, \fBuint8_t\fP buttonPin)"
+
+.PP
+Initialize DIO PIN as input\&. calls the DIO_init passing the dirction value as IN to set provided pin in the port as input 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbuttonPort\fP contains in which port the pin will be intialized as an input 
+.br
+\fIbuttonPin\fP contains which pin will be intialized as an input 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status returns Not_Ok if the intiailization fails, ekse returns Ok\&. 
+.RE
+.PP
+
+.SS "\fBStatus\fP BUTTON_read (\fBuint8_t\fP buttonPort, \fBuint8_t\fP buttonPin, volatile \fBuint8_t\fP * value)"
+
+.PP
+Reads the input comming from the button connected to the microcontroller pin\&. calls the DIO passing the pointer value to get the status of the PIN 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbuttonPort\fP port to be accessed (PORTA, PORTB, PORTC, PORTD) 
+.br
+\fIbuttonPin\fP Pin to be accessed 
+.br
+\fIvalue\fP pointer that holds the state of the pin (high or low) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Status 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Trafic Light LED from the source code\&.
